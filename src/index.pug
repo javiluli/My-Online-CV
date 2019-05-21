@@ -1,0 +1,35 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(http-equiv='X-UA-Compatible', content='ie=edge')
+    title My Online CV
+  body
+    #__next
+      header.main-header
+        nav.main-header__menu
+          div
+            a(href="/")
+              img(src="./static/content/svg/cv-logo.svg", alt="cv-logo").cv-logo
+          nav.main-menu#main_menu
+            ul.list-main-menu
+              .colum-list
+                li.main_menu__item: a(href="/").main_menu__item-link Home
+                li.main_menu__item: a(href="/").main_menu__item-link cursos
+                li.main_menu__item: a(href="/").main_menu__item-link About us
+                li.main_menu__item: a(href="/").main_menu__item-link Contact us
+              .colum-list
+                li.change-langua__list
+                  p.text-change-langua Idioma
+                  .change-languaje#change-languaje
+                    a(href="#"): img(src="./static/content/svg/spain.svg", alt="cv-logo").img-languaje
+                    a(href="#"): img(src="./static/content/svg/english.svg", alt="cv-logo").img-languaje
+                    a(href="#"): img(src="./static/content/svg/france.svg", alt="cv-logo").img-languaje
+                    a(href="#"): img(src="./static/content/svg/japan.svg", alt="cv-logo").img-languaje
+          .main-end#main-end
+            .theme
+              input#light.dark-mode.radio-1(type='radio', name='themeColor', checked )
+              input#dark.dark-mode.radio-2(type='radio', name='themeColor',)
+            .main-menu-toggle#main_menu_toggle
+              

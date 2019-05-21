@@ -1,6 +1,6 @@
-# Webpack simple workflow
+# My Online CV
 
-Simple workflow creado con webpack 4
+My online CV + Webpack + Git
 
 ## Un sitio web típico necesita
 
