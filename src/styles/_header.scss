@@ -10,7 +10,7 @@
 .main-header {
   height: var(--header-height);
   border-bottom: 1px solid var(--border-color);
-  background: hsla(0, 0%, 100%, 0.301);
+  background: var(--color-body-bg);
   position: fixed;
   top: 0;
   width: 100%;
@@ -19,8 +19,8 @@
 }
 
 .main-header__menu {
-  display: grid;
-  grid-template-columns: max-content 1fr;
+  display: flex;
+  justify-content: space-between;
   max-width: 1200px;
   width: 100%;
   height: 100%;
@@ -30,24 +30,27 @@
 }
 .cv-logo {
   height: 2.5em;
+  width: 2.5em;
 }
 .main-end {
   position: relative;
-  display: flex;
-  justify-content: flex-end;
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  justify-content: center;
   align-items: center;
-  gap: 1em;
+  grid-gap: var(--grid-gap);
 }
 
 .main-menu {
   position: absolute;
+  text-align: right;
   padding: 0 0.5em;
   width: 100%;
   height: 100vh;
-  background-color: rgb(0, 0, 0);
+  background-color: var(--color-second-body-bg);
   top: var(--header-height);
   right: -100%;
-  transition: 0.3s;
+  transition: 0.2s;
 }
 
 .show_menu {
@@ -55,8 +58,9 @@
 }
 
 .change-languaje {
-  display: flex;
-  gap: 1em;
+  display: grid;
+  grid-template-columns: repeat(4, max-content);
+  grid-gap: var(--grid-gap);
   justify-content: flex-end;
   border-bottom: 1px solid var(--color-text-light);
 }
@@ -64,7 +68,7 @@
   width: 2em;
 }
 .text-change-langua {
-  color: var(--color-text-light);
+  color: var(--color-text);
   padding: 0.5em 0;
 }
 .list-main-menu {
@@ -76,19 +80,27 @@
 }
 .main_menu__item {
   padding: 0.75em 0;
-  border-bottom: 1px solid var(--color-text-light);
+  border-bottom: 1px solid var(--color-text);
 }
 .main_menu__item-link {
-  color: var(--color-text-light);
+  color: var(--color-text);
 }
 .main-menu-toggle {
   position: relative;
+  display: flex;
+  align-items: center;
   z-index: 300;
-  width: 30px;
-  height: 20px;
-  box-shadow: inset 0 4px var(--text-color);
+  width: 40px;
+  height: 30px;
   cursor: pointer;
-  transition: 0.1s;
+}
+.span-menu-toggle {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 5px;
+  background-color: var(--text-color);
+
   &::before,
   &::after {
     content: "";
@@ -96,24 +108,98 @@
     position: absolute;
     left: 0;
     width: 100%;
-    height: 4px;
+    height: 5px;
     background-color: var(--text-color);
-    transition: 0.1s;
   }
+
   &::before {
-    bottom: 0;
+    animation: animation_menu_before 0.2s linear forwards;
+
+    @keyframes animation_menu_before {
+      0% {
+        top: 0px;
+        transform: rotate(45deg);
+        background-color: var(--text-color);
+      }
+      10% {
+        top: 0px;
+        transform: rotate(0deg);
+      }
+      50% {
+        top: 0px;
+        transform: rotate(0deg);
+      }
+      100% {
+        top: 10px;
+      }
+    }
   }
   &::after {
-    bottom: 8px;
+    animation: animation_menu_after 0.2s linear forwards;
+
+    @keyframes animation_menu_after {
+      0% {
+        bottom: 0px;
+        transform: rotate(-45deg);
+      }
+      10% {
+        bottom: 0px;
+        transform: rotate(0deg);
+      }
+      50% {
+        bottom: 0px;
+        transform: rotate(0deg);
+      }
+      100% {
+        bottom: 10px;
+      }
+    }
   }
 }
 
-.show-menu-toggle {
-  position: relative;
-  box-shadow: inset 0 4px var(--color-dark-alt);
+.span-menu-toggle-show {
+  background-color: transparent;
   &::before,
   &::after {
-    background-color: var(--color-dark-alt);
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color: var(--text-color);
+  }
+  &::before {
+    animation: animation_menuToggle_before 0.2s linear forwards;
+    @keyframes animation_menuToggle_before {
+      0% {
+        top: 10px;
+      }
+      50% {
+        top: 0px;
+        transform: rotate(0deg);
+      }
+      100% {
+        top: 0px;
+        transform: rotate(45deg);
+      }
+    }
+  }
+  &::after {
+    animation: animation_menuToggle_after 0.2s linear forwards;
+    @keyframes animation_menuToggle_after {
+      0% {
+        bottom: 10px;
+      }
+      50% {
+        bottom: 0px;
+        transform: rotate(0deg);
+      }
+      100% {
+        bottom: 0px;
+        transform: rotate(-45deg);
+      }
+    }
   }
 }
 
@@ -122,19 +208,23 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: rgb(109, 180, 228);
+  padding: 0.2em;
+  border-radius: 2em;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 input {
   &[type="radio"] {
-    width: 2em;
-    height: 2em;
-    margin: 0 0.25em;
+    width: 1.3em;
+    height: 1.3em;
+    margin: 0 0.3em;
     -webkit-appearance: none;
+    appearance: none;
+    outline: none;
     border-radius: 15px;
-    background-color: rgba(0, 0, 0, 0.2);
     background-repeat: no-repeat;
     background-size: cover;
-    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
     &:nth-child(1) {
       background-image: url(/static/content/svg/sun-dark.svg);
     }

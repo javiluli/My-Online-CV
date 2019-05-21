@@ -7,6 +7,7 @@ html(lang='en')
     title My Online CV
   body
     #__next
+      <!------- Header ------->
       header.main-header
         nav.main-header__menu
           div
@@ -30,6 +31,41 @@ html(lang='en')
           .main-end#main-end
             .theme
               input#light.dark-mode.radio-1(type='radio', name='themeColor', checked )
-              input#dark.dark-mode.radio-2(type='radio', name='themeColor',)
+              input#dark.dark-mode.radio-2(type='radio', name='themeColor')
             .main-menu-toggle#main_menu_toggle
-              
+              span.span-menu-toggle#span_menu_toggle
+
+      <!------- Main container body ------->
+      main.main-section-body
+        <!------- Datos personales------->
+        section.personal-date 
+          .container-pd
+            .wrapper-img-cv.wrapper-dp
+              img(src="./static/content/img/img.jpg", alt="").img-cv
+              h1.title-primary Tecnico en sistemas microinformáticos y redes
+            .wrapper-list-dp.wrapper-dp
+              .list-personalDate
+                h2.subtitle-personalDate Datos personales
+                p.text-personalDate
+                  b Nombre: 
+                  i Javier
+                p.text-personalDate 
+                  b Apellidos: 
+                  i Delgado Rodriguez
+                p.text-personalDate 
+                  b Edad: 
+                  i 22 años
+                p.text-personalDate 
+                  b Nacionalidad: 
+                  i Española
+              .list-personalDate
+                h2.subtitle-personalDate Contacto
+                p.text-personalDate 
+                  b Direccion: 
+                  i Leganes (Madrid)
+                p.text-personalDate 
+                  b Telefono: 
+                  i (+34) 646 65 81 65
+                p.text-personalDate 
+                  b E-Mail: 
+                  i javidel96@hotmail.es

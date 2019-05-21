@@ -8,8 +8,7 @@ import "./static/content/svg/english.svg";
 import "./static/content/svg/france.svg";
 import "./static/content/svg/japan.svg";
 import "./static/content/svg/cv-logo.svg";
-// import "./static/content/svg/favicon.svg";
-// import "./static/content/img/img.jpg";
+import "./static/content/img/img.jpg";
 //---------------------------------//
 
 //---------------------------------//
@@ -30,5 +29,6 @@ import "./static/fonts/Montserrat-SemiBold.ttf";
 
 //---------------------------------//
 import "./static/js/show_menu";
-import "./static/js/copyright";
+import "./static/js/change_darkMode";
+// import "./static/js/copyright";
 //---------------------------------//
