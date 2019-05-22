@@ -1,0 +1,16 @@
+.competencies {
+  background-color: var(--color-body-bg);
+  border-radius: var(--border-radius);
+  box-shadow: 0.1em 0.1em 10px rgba(0, 0, 0, 0.2);
+}
+.container-competencies {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: var(--border-radius);
+  padding: 0.5em;
+}
+.wrappers-competencies {
+  display: flex;
+  flex-direction: column;
+}

@@ -1,0 +1,91 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  box-sizing: inherit;
+  color: var(--color-text);
+  font-size: 1.25rem;
+}
+
+body {
+  font-weight: 400;
+  line-height: var(--body-line-height);
+  color: var(--text-color);
+  background-color: var(--color-second-body-bg);
+}
+h1 {
+  font-size: var(--h1-font-size);
+}
+h2 {
+  font-size: var(--h2-font-size);
+}
+h3 {
+  font-size: var(--h3-font-size);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading-font);
+}
+img {
+  display: block;
+  width: 100%;
+}
+p,
+ul,
+li,
+span,
+a {
+  font-family: var(--body-font);
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+}
+
+section {
+  margin: 0.5em 0;
+  // height: calc(100vh - 4em);
+}
+
+.subtitle {
+  position: relative;
+  font-weight: 400;
+  margin: 0 0 0.5em 0.5em;
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: var(--color-second);
+  }
+}
+
+.subSub-title {
+  font-weight: 200;
+  margin-bottom: 0.25em;
+  color: var(--color-first);
+}
+.text-styles {
+  font-size: var(--normal-font-size);
+  padding: 0.25em 0;
+
+  &::first-letter {
+    color: var(--color-first);
+  }
+}

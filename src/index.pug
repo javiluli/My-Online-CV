@@ -37,35 +37,130 @@ html(lang='en')
 
       <!------- Main container body ------->
       main.main-section-body
-        <!------- Datos personales------->
+        <!------- Datos personales ------->
         section.personal-date 
           .container-pd
             .wrapper-img-cv.wrapper-dp
               img(src="./static/content/img/img.jpg", alt="").img-cv
               h1.title-primary Tecnico en sistemas microinformáticos y redes
             .wrapper-list-dp.wrapper-dp
-              .list-personalDate
-                h2.subtitle-personalDate Datos personales
-                p.text-personalDate
+              .wraps
+                h2.subtitle Datos personales
+                p.text-styles
                   b Nombre: 
                   i Javier
-                p.text-personalDate 
+                p.text-styles
                   b Apellidos: 
                   i Delgado Rodriguez
-                p.text-personalDate 
+                p.text-styles
                   b Edad: 
                   i 22 años
-                p.text-personalDate 
+                p.text-styles
                   b Nacionalidad: 
                   i Española
-              .list-personalDate
-                h2.subtitle-personalDate Contacto
-                p.text-personalDate 
+              .wraps
+                h2.subtitle Contacto
+                p.text-styles
                   b Direccion: 
                   i Leganes (Madrid)
-                p.text-personalDate 
+                p.text-styles
                   b Telefono: 
                   i (+34) 646 65 81 65
-                p.text-personalDate 
+                p.text-styles
                   b E-Mail: 
                   i javidel96@hotmail.es
+
+        <!------- Experiencia laboral ------->
+        section.work-experience
+          .container-wep
+            h2.subtitle Expeciencia laboral
+            .container-wraps-wExp
+              .wraps
+                h3.subSub-title Simpleinformatica
+                p.text-styles: b Simpleinformatica (2018)
+                p.text-styles Ultima semana de septiembre, mes de diciembre y noviembre. Desarrollo de páginas web y diseño en Photoshop e Illustrator.
+              .wraps
+                h3.subSub-title TopCarton S.L.
+                p.text-styles: b TopCarton S.L. (2015-18, julio y agosto)
+                p.text-styles Peon en cadenas de montaje de cajas y expositores de cartón y puesto en máquinas industriales.
+              .wraps
+                h3.subSub-title Otras actividades laborales
+                p.text-styles Experiencia en monataje, limpieza, formateando e enstalacion de diversos programas (paquete ofimático, antivirus, edición de video, audio y fotografía.)
+
+        <!------- Estudios ------->
+        section.studies
+          .container-studies
+            h2.subtitle Estudios
+            .wrappers-studies
+              .wraps
+                h3.subSub-title Titulo en Grado Medio
+                p.text-styles: b Tecnico microinformatico y redes locales
+                ul
+                  li.text-styles Dominio del paquete ofimático de Microsoft
+                  li.text-styles Dominio de virtualización en VMWare y VMWareTools.
+                  li.text-styles Dominio del software Packet Tracer.
+                  li.text-styles Habilidad para el montaje y mantenimiento de equipos, e instalación de software.
+                  li.text-styles Dominio del SO Windows Server 2016.
+                  li.text-styles Dominio del SO Linux Ubuntu 17.04.
+                  li.text-styles Dominio del SO Ubuntu Server.
+                  li.text-styles Dominio del HTML5, CSS3 y editores como SublimeText y VS Code.
+                  li.text-styles Dominion de WordPress, WooCommerce y SEO.
+                  li.text-styles Dominio de Adobe Photoshop e Illustrator.
+              .wraps
+                h3.subSub-title Titulo de E.S.O.
+                p.text-styles Titulo de la E.S.O. en el instituto Siglo XXI de Leganes
+
+        <!------- Otras competencias ------->
+        section.competencies
+          .container-competencies
+            h2.subtitle Otras competencias
+            .wrappers-competencies
+              h3.subSub-title Otras competencias que puedo desempeñar son
+              ul
+                li.text-styles Perseverante e insistente.
+                li.text-styles Puntualidad y responsabilidad.
+                li.text-styles Saber trabajar en equipo.
+                li.text-styles Gran respeto hacia las demás personas.
+                li.text-styles Saber hablar con educación y entusiasmo.
+                li.text-styles Saber aceptar los errores y corregirlos.
+                li.text-styles Expresar las cosas siempre con la mayor claridad posible.
+                li.text-styles Tener siempre herramientas para resolver problemas.
+                li.text-styles Dominion de WordPress, WooCommerce y SEO.
+                li.text-styles Gran interés por aprender cada día más sobre el desarrollo web ysus tecnologías.
+
+        <!------- Habilidades ------->
+        section.habilidades
+          .container-habilidades
+            h2.subtitle Habilidades
+            .wrappers-habilidades
+              .wraps
+                h3 HTML
+                .bar
+                  .bar__html.bar-progres
+              .wraps
+                h3 CSS
+                .bar
+                  .bar__css.bar-progres
+              .wraps
+                h3 javascript
+                .bar
+                  .bar__js.bar-progres
+              .wraps
+                h3 WordPress y SEO
+                .bar
+                  .bar__wp.bar-progres
+              .wraps
+                h3 Adobe Potohshop
+                .bar
+                  .bar__Ps.bar-progres
+              .wraps
+                h3 Adobe Illustrator
+                .bar
+                  .bar__Ai.bar-progres
+     
+      footer.footer
+        p
+          | Copyright © 
+          script.
+            document.write(new Date().getFullYear());
+          | , JD
