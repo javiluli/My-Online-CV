@@ -1,8 +1,4 @@
 // Import png/jpg/svg/gif
-import "./static/content/svg/moon.svg";
-import "./static/content/svg/moon-dark.svg";
-import "./static/content/svg/sun.svg";
-import "./static/content/svg/sun-dark.svg";
 import "./static/content/svg/spain.svg";
 import "./static/content/svg/english.svg";
 import "./static/content/svg/france.svg";

@@ -1,0 +1,33 @@
+header.main-header
+  nav.main-header__menu
+    div
+      a(href="#")
+        img(src="./static/content/svg/cv-logo.svg", alt="cv-logo").cv-logo
+    nav.main-menu#main_menu
+      ul.list-main-menu
+        .colum-list
+          li.main_menu__item: a(href="/").main_menu__item-link Home
+          li.main_menu__item: a(href="/").main_menu__item-link cursos
+          li.main_menu__item: a(href="/").main_menu__item-link About us
+          li.main_menu__item: a(href="/").main_menu__item-link Contact us
+        .colum-list
+          li.change-langua__list
+            p.text-change-langua Idioma
+            .change-languaje#change-languaje
+              a(href="#"): img(src="./static/content/svg/spain.svg", alt="cv-logo").img-languaje
+              a(href="#"): img(src="./static/content/svg/english.svg", alt="cv-logo").img-languaje
+              a(href="#"): img(src="./static/content/svg/france.svg", alt="cv-logo").img-languaje
+              a(href="#"): img(src="./static/content/svg/japan.svg", alt="cv-logo").img-languaje
+    .main-end#main-end
+      .themes
+        label(for='light').main-end_label
+          input#light.dark-mode.radio-1(type='radio', name='themeColor', checked='checked')
+          svg.svg-change-mode_dark(xmlns='http://www.w3.org/2000/svg', viewBox='0 0 45.2 45.2')
+            path.sun(d="M22.6 11.3c-6.2 0-11.3 5.1-11.3 11.3s5.1 11.3 11.3 11.3c6.2 0 11.3-5.1 11.3-11.3s-5.1-11.3-11.3-11.3zm0-3.4c-1.2 0-2.2-1-2.2-2.2V2.2c0-1.2 1-2.2 2.2-2.2s2.2 1 2.2 2.2v3.5c0 1.3-1 2.2-2.2 2.2zm0 29.3c-1.2 0-2.2 1-2.2 2.2V43c0 1.2 1 2.2 2.2 2.2s2.2-1 2.2-2.2v-3.5c0-1.3-1-2.3-2.2-2.3zm10.3-25c-.9-.9-.9-2.3 0-3.1l2.5-2.5c.9-.9 2.3-.9 3.1 0 .9.9.9 2.3 0 3.1L36 12.2c-.8.9-2.2.9-3.1 0zM12.2 32.9c-.9-.9-2.3-.9-3.1 0l-2.5 2.5c-.9.9-.9 2.3 0 3.1s2.3.9 3.1 0l2.5-2.5c.9-.8.9-2.2 0-3.1zm25-10.3c0-1.2 1-2.2 2.2-2.2H43c1.2 0 2.2 1 2.2 2.2s-1 2.2-2.2 2.2h-3.5c-1.3 0-2.3-1-2.3-2.2zm-29.3 0c0-1.2-1-2.2-2.2-2.2H2.2c-1.2 0-2.2 1-2.2 2.2s1 2.2 2.2 2.2h3.5c1.3 0 2.2-1 2.2-2.2zm25 10.3c.9-.9 2.3-.9 3.1 0l2.5 2.5c.9.9.9 2.3 0 3.1s-2.3.9-3.1 0L32.9 36c-.8-.8-.8-2.2 0-3.1zM12.2 12.2c.9-.9.9-2.3 0-3.1L9.7 6.6c-.9-.9-2.3-.9-3.1 0-.9.9-.9 2.3 0 3.1l2.5 2.5c.9.9 2.3.9 3.1 0z", fill='#fff')
+        label(for='dark').main-end_label
+          input#dark.dark-mode.radio-2(type='radio', name='themeColor')
+          svg.svg-change-mode_dark(xmlns='http://www.w3.org/2000/svg', viewBox='0 0 42 45.2')
+            path.moon(d="M41.7 32.7c-.4-.5-1.1-.7-1.7-.5-1.7.6-3.5.9-5.4.9-9.1 0-16.6-7.4-16.6-16.6 0-5.5 2.7-10.6 7.3-13.7.5-.3.8-1 .6-1.6-.1-.6-.6-1.1-1.3-1.2h-2C10.1 0 0 10.1 0 22.6s10.1 22.6 22.6 22.6c7.9 0 15.1-4 19.2-10.7.3-.6.3-1.3-.1-1.8z", fill='#fff')
+            
+      .main-menu-toggle#main_menu_toggle
+        span.span-menu-toggle#span_menu_toggle

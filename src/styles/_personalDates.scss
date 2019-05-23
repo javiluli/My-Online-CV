@@ -1,42 +1,14 @@
-.main-section-body {
-  margin: var(--header-height) auto 1em;
-  border-radius: var(--border-radius);
-  width: calc(100% - 1.25rem);
-  max-width: 1200px;
-}
-
-.personal-date {
-  background-color: var(--color-body-bg);
-  border-radius: var(--border-radius);
-  box-shadow: 0.1em 0.1em 10px rgba(0, 0, 0, 0.2);
-}
-
-.container-pd {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  border-radius: var(--border-radius);
-  padding: 0.5em;
-}
-.wrapper-dp {
-  display: grid;
-  grid-gap: var(--grid-gap);
-}
-.title-primary {
-  font-size: 1rem;
-}
-
-.img-cv {
-  width: 5em;
-  margin: 0.25em;
-  border-radius: var(--border-radius);
-  border: 1px solid var(--color-first);
-}
-
 .wrapper-img-cv {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   text-align: center;
+  margin-bottom: 1em;
+}
+
+.img-cv {
+  width: 4em;
+  border-radius: var(--border-radius);
+  border: 2px solid hsl(0, 0%, 10%);
 }

@@ -1,10 +1,4 @@
-#__next {
-  height: calc(100vh - var(--header-height));
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-
+// Main header styles
 .main-header {
   height: var(--header-height);
   border-bottom: 1px solid var(--border-color);
@@ -16,6 +10,7 @@
   z-index: 100;
 }
 
+// Main menu header styles
 .main-header__menu {
   display: flex;
   justify-content: space-between;
@@ -26,19 +21,15 @@
   width: calc(100% - 1rem);
   margin: 0 auto;
 }
+
+// Styles for image primary
 .cv-logo {
   height: 2.5em;
   width: 2.5em;
 }
-.main-end {
-  position: relative;
-  display: grid;
-  grid-template-columns: repeat(2, max-content);
-  justify-content: center;
-  align-items: center;
-  grid-gap: var(--grid-gap);
-}
 
+// List menu container
+//----------------------------
 .main-menu {
   position: absolute;
   text-align: right;
@@ -50,25 +41,13 @@
   right: -100%;
   transition: 0.3s ease-in;
 }
-
+// Toggle class animation show menu
 .show_menu {
   right: 0;
 }
+//----------------------------
 
-.change-languaje {
-  display: grid;
-  grid-template-columns: repeat(4, max-content);
-  grid-gap: var(--grid-gap);
-  justify-content: flex-end;
-  border-bottom: 1px solid var(--color-text-light);
-}
-.img-languaje {
-  width: 2em;
-}
-.text-change-langua {
-  color: var(--color-text);
-  padding: 0.5em 0;
-}
+// Items list menu
 .list-main-menu {
   display: flex;
   flex-direction: column;
@@ -83,6 +62,79 @@
 .main_menu__item-link {
   color: var(--color-text);
 }
+
+// Items list change languaje
+.change-languaje {
+  display: grid;
+  grid-template-columns: repeat(4, max-content);
+  grid-gap: var(--grid-gap);
+  justify-content: flex-end;
+  border-bottom: 1px solid var(--color-text-light);
+}
+.text-change-langua {
+  color: var(--color-text);
+  padding: 0.5em 0;
+}
+.img-languaje {
+  width: 2em;
+}
+
+// Label inputs for change 'Dark-Mode'
+.main-end {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  justify-content: center;
+  align-items: center;
+  grid-gap: var(--grid-gap);
+}
+
+.themes {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(2, max-content);
+  grid-gap: var(--grid-gap);
+  align-items: center;
+  background-color: var(--color-body-bg);
+  padding: 0.25em;
+  border-radius: 5em;
+  box-shadow: 2px 2px 10px -1px hsl(0, 0%, 50%);
+}
+
+.main-end_label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+input[type="radio"] {
+  background-color: #ff6666;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  width: 1.25em;
+  height: 1.25em;
+  border-radius: 100%;
+  box-shadow: inset 0 0 10px 5px rgba(0, 0, 0, 0.3),
+    0 0 10px 5px rgba(255, 255, 255, 0);
+  transition: 0.2s;
+}
+
+input[type="radio"]:checked[type="radio"] {
+  background-color: #33ff33;
+  box-shadow: inset 0 0 1px 5px rgba(255, 255, 255, 0), 0 0 5px 2px #33ff33;
+}
+
+.svg-change-mode_dark {
+  position: absolute;
+  display: block;
+  width: 100%;
+  padding: 0.2em;
+}
+
+// Button toggle up menu
 .main-menu-toggle {
   position: relative;
   display: flex;
@@ -198,42 +250,5 @@
         transform: rotate(-45deg);
       }
     }
-  }
-}
-
-.theme {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgb(109, 180, 228);
-  padding: 0.2em;
-  border-radius: 2em;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-}
-
-input {
-  &[type="radio"] {
-    width: 1.3em;
-    height: 1.3em;
-    margin: 0 0.3em;
-    -webkit-appearance: none;
-    appearance: none;
-    outline: none;
-    border-radius: 15px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    &:nth-child(1) {
-      background-image: url(/static/content/svg/sun-dark.svg);
-    }
-  }
-  &:checked[type="radio"]:nth-child(1) {
-    background-image: url(/static/content/svg/sun.svg);
-  }
-  &[type="radio"]:nth-child(2) {
-    background-image: url(/static/content/svg/moon-dark.svg);
-  }
-  &:checked[type="radio"]:nth-child(2) {
-    background-image: url(/static/content/svg/moon.svg);
   }
 }

@@ -1,0 +1,39 @@
+.bar {
+  position: relative;
+  width: 15em;
+  height: 1.25em;
+  margin: 0.5em 0;
+  border-radius: 1.25em;
+  background-color: hsl(0, 0%, 95%);
+  overflow: hidden;
+}
+.bar-progres {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+}
+.bar__html {
+  width: 85%;
+  background-color: #e34f26;
+}
+.bar__css {
+  width: 70%;
+  background-color: #1572b6;
+}
+.bar__js {
+  width: 30%;
+  background-color: #f7df1e;
+}
+.bar__wp {
+  width: 60%;
+  background-color: #31c524;
+}
+.bar__Ps {
+  width: 45%;
+  background-color: #00c8ff;
+}
+.bar__Ai {
+  width: 70%;
+  background-color: #ff7c00;
+}
