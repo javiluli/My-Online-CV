@@ -27,5 +27,6 @@ import "./static/fonts/Montserrat-SemiBold.ttf";
 import "./static/js/show_menu";
 import "./static/js/change_darkMode";
 // import "./static/js/change_languages";
+import "./static/js/btn-back-top";
 import "./static/js/copyright";
 //---------------------------------//
