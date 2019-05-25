@@ -1,5 +1,7 @@
 .btn-back-top {
-  display: block;
+  -webkit-appearance: none;
+  appearance: none;
+  display: none;
   position: fixed;
   bottom: 1em;
   right: 1em;
@@ -11,8 +13,8 @@
   border-color: var(--color-first);
   border-style: solid;
   border-radius: 50%;
+  outline: none;
   box-shadow: 0 0 10px -1px hsl(0, 0%, 50%);
-  opacity: 0;
   transition-timing-function: ease-in-out;
   transition-property: background-color, color;
   z-index: var(--z-modal);
