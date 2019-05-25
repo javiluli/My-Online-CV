@@ -61,6 +61,15 @@
 }
 .main_menu__item-link {
   color: var(--color-text);
+  transition: 0.1s;
+
+  &:hover {
+    color: var(--color-second);
+  }
+
+  &:active {
+    color: var(--color-first);
+  }
 }
 
 // Items list change languaje
