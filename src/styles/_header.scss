@@ -33,7 +33,7 @@
 .main-menu {
   position: absolute;
   text-align: right;
-  padding: 0 1em;
+  padding: 0 0.5em;
   width: 100%;
   height: 100vh;
   background-color: var(--color-second-body-bg);
@@ -75,9 +75,13 @@
 }
 // Wrapper settings
 .wrapper-settings {
-  display: flex;
-  padding: 0.5em;
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  grid-gap: var(--grid-gap);
   justify-content: flex-end;
+  align-items: center;
+  padding: 0 0.5em;
+  width: 100%;
   cursor: pointer;
 
   &:active {
@@ -86,8 +90,8 @@
   }
 }
 .settings-icon {
-  margin-left: 0.75em;
   width: 1.25em;
+  height: 1.25em;
 }
 .list-settings {
   display: none;
@@ -121,7 +125,6 @@
   grid-template-columns: repeat(2, max-content);
   justify-content: center;
   align-items: center;
-  grid-gap: var(--grid-gap);
 }
 
 .main-end_label {
@@ -129,16 +132,15 @@
 }
 
 .inpt-switch-theme {
-  border: 2px solid red;
   &[type="checkbox"] {
     position: relative;
-    width: 2em;
-    height: 1em;
+    width: 2.5em;
+    height: 1.25em;
     appearance: none;
     -webkit-appearance: none;
     background-color: hsl(0, 0%, 80%);
     outline: none;
-    border-radius: 20px;
+    border-radius: 1.25em;
     border: none;
     transition: var(--transition-05);
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
@@ -146,8 +148,8 @@
     &::before {
       content: "";
       position: absolute;
-      width: 1em;
-      height: 1em;
+      width: 1.25em;
+      height: 1.25em;
       border-radius: 100%;
       top: 0;
       left: 0;
@@ -162,7 +164,7 @@
     background-color: #02a6f2;
 
     &::before {
-      left: 1em;
+      left: 1.25em;
     }
   }
 }
