@@ -33,3 +33,16 @@
   --z-fixed: 100;
   --z-modal: 1000;
 }
+:root[data-theme="dark"] {
+  // --bg: #333333;
+  // --bg-panel: #434343;
+  // --color-headings: #3694ff;
+  // --color-text: #b5b5b5;
+
+  --color-first: hsl(219, 88%, 60%);
+  --color-second: hsl(219, 100%, 66%);
+  --color-text: hsl(180, 3%, 98%);
+  --color-body-bg: hsl(206, 19%, 14%);
+  --color-second-body-bg: hsl(204, 19%, 10%);
+  --border-color: hsl(200, 18%, 3%);
+}
