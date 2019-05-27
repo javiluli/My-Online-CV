@@ -8,7 +8,9 @@
 }
 
 .img-cv {
-  width: 4em;
+  width: 5.5em;
   border-radius: var(--border-radius);
   border: 3px solid var(--color-first);
+  -webkit-clip-path: polygon(100% 0, 100% 80%, 50% 100%, 0 80%, 0 0);
+  clip-path: polygon(100% 0, 100% 80%, 50% 100%, 0 80%, 0 0);
 }
