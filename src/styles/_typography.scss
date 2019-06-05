@@ -53,3 +53,9 @@ a {
   text-decoration: none;
   display: block;
 }
+
+input {
+  appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+}

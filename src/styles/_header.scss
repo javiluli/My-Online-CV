@@ -12,7 +12,6 @@
 
 // Main menu header styles
 .main-header__menu {
-  // position: relative;
   display: flex;
   justify-content: space-between;
   max-width: 1200px;
@@ -57,6 +56,7 @@
   flex-direction: column;
   width: 100%;
   height: 100%;
+  padding: 0 0.5em;
 }
 .colum-list {
   border-bottom: 1px solid var(--color-text);
@@ -69,56 +69,115 @@
 // }
 .main_menu__item-link {
   color: var(--color-text);
-  padding: 0.5em;
+  padding: 0.5em 0;
 
   &:active {
     color: var(--color-first);
-    background-color: rgb(224, 224, 224);
   }
 }
 // Wrapper settings
 .wrapper-settings {
-  display: grid;
-  grid-template-columns: repeat(2, max-content);
-  grid-gap: var(--grid-gap);
+  display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding: 0 0.5em;
   width: 100%;
   cursor: pointer;
-
-  &:active {
-    color: var(--color-first);
-    background-color: rgb(161, 161, 161);
+}
+.label_setting {
+  margin-top: 1em;
+  input {
+    display: none;
   }
 }
+
 .settings-icon {
   width: 1.25em;
   height: 1.25em;
+  &:active {
+    transform: scale(0.9);
+  }
 }
 .list-settings {
   display: none;
   width: 100%;
 }
-
 .show_list-settings {
   display: block;
-}
-
-// Items list change languaje
-.change-languaje {
-  display: grid;
-  grid-template-columns: repeat(4, max-content);
-  grid-gap: var(--grid-gap);
-  justify-content: flex-end;
-  border-bottom: 1px solid var(--color-text-light);
 }
 .text-settings {
   color: var(--color-text);
   padding: 0.5em 0;
 }
+// Items list change languaje
+.change-languaje {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-end;
+  border-bottom: 1px solid var(--color-text-light);
+}
+.label__translate {
+  padding: 0 0.5em;
+}
+.btn {
+  height: 20px;
+  width: 100%;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: none;
+  transform: scale(1);
+
+  &:checked + .img-languaje {
+    transform: scale(1.1);
+    border-bottom: 2px solid rgb(68, 155, 255);
+  }
+}
+
 .img-languaje {
+  display: block;
+  border-bottom: 2px solid rgba(68, 155, 255, 0.2);
   width: 2em;
+  cursor: pointer;
+}
+.tooltip_information {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.img-languaje_information {
+  width: 1em;
+  display: block;
+  cursor: pointer;
+
+  & + span {
+    position: absolute;
+    display: block;
+    background-color: #02a6f2;
+    top: 3em;
+    right: 0;
+    width: 22em;
+    text-align: left;
+    color: white;
+    font-size: var(--smaller-font-size);
+    padding: 0.5em;
+    border-radius: var(--border-radius);
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(0.5em);
+    transition: 0.25s;
+    b {
+      font-size: var(--small-font-size);
+    }
+  }
+
+  &:active + span {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 // Label inputs for change 'Dark-Mode'
@@ -135,10 +194,7 @@
     position: relative;
     width: 2.5em;
     height: 1.25em;
-    appearance: none;
-    -webkit-appearance: none;
     background-color: hsl(0, 0%, 80%);
-    outline: none;
     border-radius: 1.25em;
     border: none;
     transition: var(--transition-05);

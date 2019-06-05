@@ -1,12 +1,11 @@
-// Import png/jpg/svg/gif
-import "./static/content/svg/spain.svg";
-import "./static/content/svg/english.svg";
-import "./static/content/svg/france.svg";
-import "./static/content/svg/japan.svg";
-import "./static/content/svg/settings.svg";
-import "./static/content/svg/cv-logo.svg";
-import "./static/content/svg/flag.svg";
-import "./static/content/img/img.jpg";
+// Import all filder from ./static/content/img/
+const cache = {};
+function importAll(r) {
+  r.keys().forEach(key => (cache[key] = r(key)));
+}
+importAll(require.context("./static/content/img/", true, /\.(jpg|svg)$/));
+// At build-time cache will be populated with all required modules.
+
 //---------------------------------//
 
 //---------------------------------//
@@ -29,7 +28,7 @@ import "./static/fonts/Montserrat-SemiBold.ttf";
 import "./static/js/show_menu";
 import "./static/js/show_settings";
 import "./static/js/change_darkMode";
-// import "./static/js/change_languages";
+import "./static/js/change_languages";
 import "./static/js/btn-back-top";
 import "./static/js/copyright";
 //---------------------------------//

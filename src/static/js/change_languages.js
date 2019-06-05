@@ -1,85 +1,124 @@
 var arrLang = {
-  'es' : {
-    'title' : 'Pagina web Multi-Idiomas con JQuery & JSON',
+  es: {
+    menu__item_link_1: "Botones animados",
+    menu__item_link_2: "Ckeckbox animados",
+    menu__item_link_3: "Iconos SVG",
+    menu__item_link_4: "GitHub",
+    text_settings_1: "Ajustes",
+    text_settings_2: "Tema oscuro",
+    text_settings_3: "Cambiar idioma",
+    title_primary: "Tecnico en sistemas microinformáticos y redes",
+    pi_subtitle_1: "Datos personales",
+    pi_subtitle_2: "Contacto",
+    pi_p__b_1: "Nombre: ",
+    pi_p__i_1: "Javier",
+    pi_p__b_2: "Apellidos: ",
+    pi_p__i_2: "Delgado Rodriguez",
+    pi_p__b_3: "Edad: ",
+    pi_p__i_3: "22 años",
+    pi_p__b_4: "Nacionalidad: ",
+    pi_p__i_4: "Española",
 
-    'titleArt' : 'Don Quijote de la Mancha',
-    'subtitle' : 'MARQUÉS DE GIBRALEÓN, CONDE DE BENALCÁZAR Y BAÑARES, VIZCONDE DE LAPUEBLA DE ALCOCER,SEÑOR DE LAS VILLAS DE CAPILLA, CURIELY BURGUILLOS',
-
-    'text1' : 'Y viéndole, Don Quijote de aquella manera, con muestras de tanta tristeza, le dijo: Sábete, Sancho, que no es un hombre más que otro si no hace más que otro.',
-    'text2' : 'Todas estas borrascas que nos suceden son señales de que presto ha de serenar el tiempo y han de sucedernos bien las cosas; porque no es posible que el mal ni el bien sean durables, y de aquí se sigue que, habiendo durado mucho el mal, el bien está ya cerca. Así que, no debes congojarte por las desgracias que a mí me suceden, pues a ti no te cabe parte dellas.',
-    'text3' : 'Y, viéndole don Quijote de aquella manera, con muestras de tanta tristeza, le dijo: Sábete, Sancho, que no es un hombre más que otro si no hace más que otro. Todas estas borrascas que nos suceden son señales de que presto ha de serenar el tiempo y han de sucedernos bien las cosas; porque no es posible que el mal ni el bien sean durables, y de aquí se sigue que, habiendo durado mucho el mal, el bien está ya cerca.',
-    'text4' : 'Así que, no debes congojarte por las desgracias que a mí me suceden, pues a ti no te cabe parte dellas. Y, viéndole don Quijote de aquella manera, con muestras de tanta tristeza, le dijo: Sábete, Sancho, que no es un hombre más que otro si no hace más que otro. Todas estas borrascas que nos suceden son señales de que presto ha de serenar el tiempo y han de sucedernos bien las cosas; porque no es posible que el mal ni el bien sean durables, y de aquí se sigue que, habiendo durado mucho el mal, el bien está ya cerca. Así que, no debes congojarte por las desgracias que a mí me suceden.',
-    
-    'btnBuy' : 'Comprar',
+    pi_subtitle_2: "Contacto",
+    pi_p__b_5: "Direccion: ",
+    pi_p__i_5: "Leganes (Madrid)",
+    pi_p__b_6: "Telefono: ",
+    pi_p__i_6: "(+34) 646 65 81 65",
+    pi_p__b_7: "E-Mail: ",
+    pi_p__i_7: "javidel96@hotmail.es"
   },
-  'en' : {
-    'title' : 'Multi-Languages ​​website with JQuery & JSON',
+  en: {
+    menu__item_link_1: "Animated buttons",
+    menu__item_link_2: "Animated Ckeckbox",
+    menu__item_link_3: "SVG icons",
+    menu__item_link_4: "GitHub",
+    text_settings_1: "Settings",
+    text_settings_2: "Dark theme",
+    text_settings_3: "Change language",
+    title_primary: "Technician in microcomputer systems and networks",
+    pi_subtitle_1: "Personal information",
+    pi_subtitle_2: "Contact",
+    pi_p__b_1: "Name: ",
+    pi_p__i_1: "Javier",
+    pi_p__b_2: "Last name: ",
+    pi_p__i_2: "Delgado Rodriguez",
+    pi_p__b_3: "Age: ",
+    pi_p__i_3: "22 years",
+    pi_p__b_4: "Nationality: ",
+    pi_p__i_4: "Spanish",
 
-    'titleArt' : 'Don Quijote of La Mancha',
-    'subtitle' : 'MARQUÉS DE GIBRALEÓN, COUNT OF BENALCÁZAR AND BATHS, VIZCONDE DE LAPUEBLA DE ALCOCER, LORD OF THE VILLAS DE CAPILLA, CURIELY BURGUILLOS',
-
-    'text1' : 'And seeing him, Don Quixote in that way, with signs of such sadness, he said: Get up, Sancho, who is not a man more than another if he does not do more than another.',
-    'text2' : 'All these storms that happen to us are signs that presto has to calm time and things have to happen well; because it is not possible for evil or good to be durable, and from this it follows that, having long lasted evil, good is already close. So, you should not be worried about the misfortunes that happen to me, because you do not have part of them.',
-    'text3' : 'And, seeing Don Quixote in that way, with signs of so much sadness, he said: Get up, Sancho, who is not a man more than another if he does not do more than another. All these storms that happen to us are signs that presto has to calm time and things have to happen well; because it is not possible for evil or good to be durable, and from this it follows that, having long lasted evil, good is already close.',
-    'text4' : 'So, you should not be worried about the misfortunes that happen to me, because you do not have part of them. And, seeing Don Quixote in that way, with signs of so much sadness, he said: Get up, Sancho, who is not a man more than another if he does not do more than another. All these storms that happen to us are signs that presto has to calm time and things have to happen well; because it is not possible for evil or good to be durable, and from this it follows that, having long lasted evil, good is already close. So, you should not be worried about the misfortunes that happen to me.',
-  
-    'btnBuy' : 'To buy',
+    pi_subtitle_2: "Contact",
+    pi_p__b_5: "Address: ",
+    pi_p__i_5: "Leganes (Madrid)",
+    pi_p__b_6: "Phone: ",
+    pi_p__i_6: "(+34) 646 65 81 65",
+    pi_p__b_7: "E-Mail: ",
+    pi_p__i_7: "javidel96@hotmail.es"
   },
-  'fr' : {
-    'title' : 'Site Web multi-langues avec JQuery & JSON',
+  fr: {
+    menu__item_link_1: "Boutons animés",
+    menu__item_link_2: "Ckeckbox animé",
+    menu__item_link_3: "icônes SVG",
+    menu__item_link_4: "GitHub",
+    text_settings_1: "Paramètres",
+    text_settings_2: "thème sombre",
+    text_settings_3: "Changer de langue",
+    title_primary: "Technicien en systèmes et réseaux de micro-ordinateurs",
+    pi_subtitle_1: "Informations personnelles",
+    pi_subtitle_2: "Contact",
+    pi_p__b_1: "Prénom: ",
+    pi_p__i_1: "Javier",
+    pi_p__b_2: "Nom: ",
+    pi_p__i_2: "Delgado Rodriguez",
+    pi_p__b_3: "Age: ",
+    pi_p__i_3: "22 ans",
+    pi_p__b_4: "Nationalité: ",
+    pi_p__i_4: "Espagnol",
 
-    'titleArt' : 'Don Quichotte de la Mancha',
-    'subtitle' : 'MARQUÉS DE GIBRALEÓN, COMTE DE BENALCÁZAR ET DE BAINS, VIZCONDE DE LAPUEBLA DE ALCOCER, SEIGNEUR DES VILLAS DE CAPILLA, CURIEL BURGUILLOS',
-
-    'text1' : 'Et en le voyant, Don Quichotte de cette manière, avec des signes d’une telle tristesse, il dit: Lève-toi, Sancho, qui n’est pas un homme plus qu’un autre s’il ne fait pas plus qu’un autre.',
-    'text2' : "Toutes ces tempêtes qui nous arrivent sont des signes que presto doit calmer le temps et que les choses doivent bien se passer; parce qu'il n'est pas possible que le mal ou le bien soit durable, et il en découle qu'après avoir longtemps persisté dans le mal, le bien est déjà proche. Donc, vous ne devriez pas vous inquiéter des malheurs qui m’arrivent, car vous n’en avez pas une partie.",
-    'text3' : "Et voyant ainsi Don Quichotte avec des signes de tant de tristesse, il dit: Lève-toi, Sancho, qui n’est pas un homme autant qu’un autre s’il ne fait pas plus qu’un autre. Toutes ces tempêtes qui nous arrivent sont des signes que presto doit calmer le temps et que les choses doivent bien se passer; parce qu'il n'est pas possible que le mal ou le bien soit durable, et il en découle qu'après avoir longtemps persisté dans le mal, le bien est déjà proche.",
-    'text4' : "Donc, vous ne devriez pas vous inquiéter des malheurs qui m’arrivent, car vous n’en avez pas une partie. Et voyant ainsi Don Quichotte avec des signes de tant de tristesse, il dit: Lève-toi, Sancho, qui n’est pas un homme autant qu’un autre s’il ne fait pas plus qu’un autre. Toutes ces tempêtes qui nous arrivent sont des signes que presto doit calmer le temps et que les choses doivent bien se passer; parce qu'il n'est pas possible que le mal ou le bien soit durable, et il en découle qu'après avoir longtemps persisté dans le mal, le bien est déjà proche. Donc, vous n'avez pas à vous soucier des malheurs qui m'arrivent.",
-  
-    'btnBuy' : 'Acheter',
+    pi_subtitle_2: "Contact",
+    pi_p__b_5: "Adresse: ",
+    pi_p__i_5: "Leganes (Madrid)",
+    pi_p__b_6: "Téléphone: ",
+    pi_p__i_6: "(+34) 646 65 81 65",
+    pi_p__b_7: "E-Mail: ",
+    pi_p__i_7: "javidel96@hotmail.es"
   },
-  'ja' : {
-    'title' : 'JQuery＆JSONを使用した多言語Webサイト',
+  ja: {
+    menu__item_link_1: "アニメーションボタン",
+    menu__item_link_2: "アニメーションチェックボックス",
+    menu__item_link_3: "SVGアイコン",
+    menu__item_link_4: "GitHub",
+    text_settings_1: "設定",
+    text_settings_2: "ダークテーマ",
+    text_settings_3: "言語を変更する",
+    title_primary: "マイクロコンピュータシステムとネットワークの技術者",
+    pi_subtitle_1: "個人情報",
+    pi_subtitle_2: "連絡する",
+    pi_p__b_1: "お名前: ",
+    pi_p__i_1: "ハビエル",
+    pi_p__b_2: "ラストネーム: ",
+    pi_p__i_2: "デルガドロドリゲス",
+    pi_p__b_3: "年齢: ",
+    pi_p__i_3: "22歳",
+    pi_p__b_4: "国籍: ",
+    pi_p__i_4: "スペイン語",
 
-    'titleArt' : 'ドンキホーテデラマンチャ',
-    'subtitle' : 'マルケス・デ・ジブラレン、ベナルカザルとバツの数、ヴィズコンデ・デ・ラプエブラ・デ・アルコサー、ヴィラス・ド・カプリラの主',
-
-    'text1' : 'そして、そのような悲しみのしるしを持って彼を見て、そのようにドンキホーテは言った、「彼が他より多くをしないならば、別人より多くではないサンチョ、起きなさい。',
-    'text2' : '私たちに起こるこれらの嵐はすべて、プレストが時間を落ち着かせなければならず、物事がうまく行われなければならないという兆候です。悪や善が丈夫であることは不可能であり、そしてこれから、悪を長続きしてきたから、善はすでに近づいているのです。だから、あなたは私に起こる不幸について心配するべきではありません、あなたはそれらの一部を持っていないからです。',
-    'text3' : 'そして、そのようにドンキホーテを見て、とても悲しみの兆候を見せて、彼は言いました。私たちに起こるこれらの嵐はすべて、プレストが時間を落ち着かせなければならず、物事がうまく行われなければならないという兆候です。悪や善が丈夫であることは不可能であり、そしてこれから、悪を長続きしてきたから、善はすでに近づいているのです。',
-    'text4' : 'だから、あなたは私に起こる不幸について心配するべきではありません、あなたはそれらの一部を持っていないからです。そして、そのようにドンキホーテを見て、とても悲しみの兆候を見せて、彼は言いました。私たちに起こるこれらの嵐はすべて、プレストが時間を落ち着かせなければならず、物事がうまく行われなければならないという兆候です。悪や善が丈夫であることは不可能であり、そしてこれから、悪を長続きしてきたから、善はすでに近づいているのです。だから、あなたは私に起こる不幸について心配する必要はありません。',
-  
-    'btnBuy' : '買う',
-  },
-  'pt' : {
-    'title' : 'Website multilíngue com JQuery e JSON',
-
-    'titleArt' : 'Dom Quixote de la Mancha',
-    'subtitle' : 'Marquês de Gibraleón, Benalcázar conde e Banares, Visconde Lapuebla Alcocer, Senhor do VILLAS DE CAPELA, CURIELY BURGUILLOS',
-
-    'text1' : 'E vê-lo, Don Quixote assim, com amostras de tristeza tanto, disse: Bem sabeis, Sancho, que não é um homem mais do que outro se ele não faz nada mais do que outro.',
-    'text2' : 'Todas essas tempestades que nos acontecem são sinais de que o presto tem que acalmar o tempo e as coisas têm que acontecer bem; porque não é possível que o mal ou o bem sejam duráveis, e daí decorre que, tendo durado muito o mal, o bem já está próximo. Então, você não deve se preocupar com as desgraças que acontecem comigo, porque você não tem parte delas.',
-    'text3' : 'E Don Quixote vê-lo assim, com amostras tão triste, ele disse: Vós bem sabeis, Sancho, que não é um homem mais do que outro se ele não faz nada mais do que outro. Todas essas tempestades que nos acontecem são sinais de que o presto tem que acalmar o tempo e as coisas têm que acontecer bem; porque não é possível que o mal ou o bem sejam duráveis, e daí decorre que, tendo durado muito o mal, o bem já está próximo.',
-    'text4' : 'Então, você não deve se preocupar com as desgraças que acontecem comigo, porque você não tem parte delas. E Don Quixote vê-lo assim, com amostras tão triste, ele disse: Vós bem sabeis, Sancho, que não é um homem mais do que outro se ele não faz nada mais do que outro. Todas essas tempestades que nos acontecem são sinais de que o presto tem que acalmar o tempo e as coisas têm que acontecer bem; porque não é possível que o mal ou o bem sejam duráveis, e daí decorre que, tendo durado muito o mal, o bem já está próximo. Então, você não precisa se preocupar com as desgraças que acontecem comigo.',
-  
-    'btnBuy' : 'Comprar',
-  },
+    pi_subtitle_2: "連絡先",
+    pi_p__b_5: "住所: ",
+    pi_p__i_5: "レガネス（マドリード",
+    pi_p__b_6: "電話番号: ",
+    pi_p__i_6: "(+34) 646 65 81 65",
+    pi_p__b_7: "Eメール: ",
+    pi_p__i_7: "javidel96@hotmail.es"
+  }
 };
 
-$(function(){
-  $('.translate').click(function(){
-    var lang = $(this).attr('id');
+$(function() {
+  $(".translate").click(function() {
+    var lang = $(this).attr("id");
 
-    $('.lang').each(function(index, element){
-      $(this).text(arrLang[lang][$(this).attr('key')]);
+    $("p, a, h1, h2, b, i").each(function(index, element) {
+      $(this).text(arrLang[lang][$(this).attr("key")]);
     });
   });
-}); 
-
-
-let imgWorld = document.getElementById('imgWorld');
-let languaje = document.getElementById('languaje');
-
-imgWorld.addEventListener('click', () => {
-  languaje.classList.toggle('active');
-})
+});
