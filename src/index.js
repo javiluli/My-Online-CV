@@ -5,6 +5,7 @@ import "./static/content/svg/france.svg";
 import "./static/content/svg/japan.svg";
 import "./static/content/svg/settings.svg";
 import "./static/content/svg/cv-logo.svg";
+import "./static/content/svg/flag.svg";
 import "./static/content/img/img.jpg";
 //---------------------------------//
 

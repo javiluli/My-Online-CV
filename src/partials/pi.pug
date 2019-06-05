@@ -1,31 +1,34 @@
 section.section-primary-container 
   .section-primary-wrapper.section-primary-wrapper__personalInfo
     .wrapper-img-cv
-      h1.title-primary Tecnico en sistemas microinformáticos y redes
-      img(src="./static/content/img/img.jpg", alt="").img-cv
+      .clip_img
+        img(src="./static/content/svg/flag.svg", alt="").banner_svg
+        img(src="./static/content/img/img.jpg", alt="").img-cv
+      h1.title-primary(key="title_primary") Tecnico en sistemas microinformáticos y redes
     .wrappers-container
       .wraps
-        h2.subtitle Datos personales
+        h2.subtitle(key="pi_subtitle_1") Datos personales
         p.text-styles
-          b Nombre: 
-          i Javier
+          b(key="pi_p__b_1") Nombre: 
+          i(key="pi_p__i_1") Javier
         p.text-styles
-          b Apellidos: 
-          i Delgado Rodriguez
+          b(key="pi_p__b_2") Apellidos: 
+          i(key="pi_p__i_2") Delgado Rodriguez
         p.text-styles
-          b Edad: 
-          i 22 años
+          b(key="pi_p__b_3") Edad: 
+          i(key="pi_p__i_3") 22 años
         p.text-styles
-          b Nacionalidad: 
-          i Española
+          b(key="pi_p__b_4") Nacionalidad: 
+          i(key="pi_p__i_4") Española
       .wraps
-        h2.subtitle Contacto
+        h2.subtitle(key="pi_subtitle_2") Contacto
         p.text-styles
-          b Direccion: 
-          i Leganes (Madrid)
+          b(key="pi_p__b_5") Direccion: 
+          i(key="pi_p__i_5") Leganes (Madrid)
         p.text-styles
-          b Telefono: 
-          i (+34) 646 65 81 65
+          b(key="pi_p__b_6") Telefono: 
+          i(key="pi_p__i_6") (+34) 646 65 81 65
         p.text-styles
-          b E-Mail: 
-          i javidel96@hotmail.es
+          b(key="pi_p__b_7") E-Mail: 
+          i(key="pi_p__i_7") javidel96@hotmail.es
+          section.wrapper-section
