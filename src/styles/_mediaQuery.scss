@@ -68,14 +68,14 @@
   .main-header__menu {
     position: relative;
     display: grid;
-    grid-template-columns: repeat(2, max-content);
-    justify-content: space-between;
+    grid-template-columns: max-content 1fr;
+    align-items: center;
+    justify-content: right;
+    margin: 0 auto;
+    padding: 0 0.5em;
     max-width: 1200px;
     width: 100%;
     height: 100%;
-    align-items: center;
-    width: calc(100% - 1rem);
-    margin: 0 auto;
   }
   .main-menu {
     position: relative;
@@ -90,10 +90,13 @@
     overflow-y: visible;
   }
   .list-main-menu {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
     height: 100%;
+    padding: 0;
   }
   .main_menu__item-link {
     padding: 0 0.5em;
@@ -132,7 +135,6 @@
 
     &:active {
       color: var(--color-first);
-      // background-color: var(--color-body-bg);
       transform: scale(0.8);
     }
   }
@@ -149,10 +151,24 @@
     border-radius: var(--border-radius);
   }
   .settings-icon {
-    width: 1.5em;
-    height: 1.5em;
-    margin: 0;
+    position: relative;
   }
+  // .list-settings {
+  //   display: flex;
+  //   justify-content: center;
+  //   align-items: center;
+  //   position: relative;
+  //   width: 100%;
+  // }
+  .text-settings {
+    display: block;
+  }
+  // .change-languaje {
+  //   flex-direction: column;
+  //   position: absolute;
+  //   top: 0;
+  //   right: 3em;
+  // }
   .img-languaje_information {
     &:hover + span {
       visibility: visible;
