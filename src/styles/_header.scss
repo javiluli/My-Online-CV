@@ -37,7 +37,8 @@
   padding: 0 0.5em;
   width: 100%;
   height: calc(100vh - 3em);
-  background-color: var(--color-second-body-bg);
+  // background-color: rgb(18, 22, 32);
+  background-color: rgb(218, 224, 238);
   top: var(--header-height);
   right: 0;
   transform: translateX(100%);
@@ -63,9 +64,9 @@
     border-bottom: none;
   }
 }
-.main_menu__item {
-  // padding: 0.5em 0;
-}
+// .main_menu__item {
+//   // padding: 0.5em 0;
+// }
 .main_menu__item-link {
   color: var(--color-text);
   padding: 0.5em;

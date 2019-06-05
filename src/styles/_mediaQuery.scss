@@ -4,12 +4,13 @@
     overflow-y: auto;
   }
   .title-primary {
-    font-size: var(--h1-font-size);
+    font-size: var(--h3-font-size);
     text-align: left;
     padding: 0 0.25em 0;
   }
   .img-cv {
     width: 7em;
+    // min-width: 4rem;
   }
 }
 
@@ -19,20 +20,21 @@
     overflow-y: auto;
   }
   .title-primary {
-    font-size: var(--h1-font-size);
+    font-size: var(--h2-font-size);
     text-align: left;
     padding: 0 0.25em 0;
   }
   .img-cv {
     width: 7em;
+    // min-width: 4rem;
   }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   .main-menu {
-    width: 40%;
-    border: 1px solid var(--color-first);
+    width: 45%;
+    border: 1px solid var(--color-text);
     transform: translateX(100%);
     padding: 1em 0.5em;
     overflow-y: auto;
