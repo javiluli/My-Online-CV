@@ -1,7 +1,7 @@
 # Lista de cosas que hacer
 - Crear base de datos con FireBase y boton de descarga en PDF del CV (formulario de registro e inicio de sesion).
 - Crear las mediaQuerys. (hecho)
-- Crear script para cambio de idioma.
+- Crear script para cambio de idioma. (iniciado, menu y Informacion personal)
 - Mejorar las variables css e incluir mas colores.
 - Cambiar el README por un porfolio o por el mismo index.html del CV.
 - Crear formulario de contacto (preferible PHP)

@@ -13,22 +13,23 @@ header.main-header
           li.main_menu__item: a(href="https://javiluli.github.io/custom-animated-checkbox/", target="_blank", key="menu__item_link_2").main_menu__item-link.text Ckeckbox animados
           li.main_menu__item: a(href="https://javiluli.github.io/icons-svg/", target="_blank", key="menu__item_link_3").main_menu__item-link.text Iconos SVG
           li.main_menu__item: a(href="https://github.com/javiluli/my-online-cv", target="_blank", key="menu__item_link_4").main_menu__item-link.text GitHub
+
         .colum-list
           li.main_menu__item.wrapper-settings#settings_icon 
-            //- p(key="text_settings_1").text-settings Ajustes
             label(for="setting_icon").label_setting
               input#settings_icon(type="button")
               img(src="./static/content/svg/settings.svg", alt="" ).settings-icon
+
           li.main_menu__item.settings
             ul.list-settings#list_settings
               li.item-settings
                 p(key="text_settings_2").text-settings.text Tema oscuro
                 label.main-end_label(for='switch')
                   input#switch.inpt-switch-theme(type='checkbox', name='theme')
+                  
               li.item-settings
                 p(key="text_settings_3").text-settings.text Cambiar idioma
                 .change-languaje#change-languaje
-                  
                   label(for="es").label__translate
                     input#es(type="radio", name="translate", checked).btn.translate
                     img(src="./static/content/svg/spain.svg", alt="cv-logo").img-languaje
@@ -38,9 +39,6 @@ header.main-header
                   label(for="fr").label__translate
                     input#fr(type="radio", name="translate").btn.translate
                     img(src="./static/content/svg/france.svg", alt="cv-logo").img-languaje
-                  label(for="ja").label__translate
-                    input#ja(type="radio", name="translate").btn.translate
-                    img(src="./static/content/svg/japan.svg", alt="cv-logo").img-languaje
                   .tooltip_information
                     img#info_icon(src="./static/content/svg/information.svg", alt="i").img-languaje_information
                     span.info_span#info_span El 

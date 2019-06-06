@@ -82,41 +82,12 @@ var arrLang = {
     pi_p__i_6: "(+34) 646 65 81 65",
     pi_p__b_7: "E-Mail: ",
     pi_p__i_7: "javidel96@hotmail.es"
-  },
-  ja: {
-    menu__item_link_1: "アニメーションボタン",
-    menu__item_link_2: "アニメーションチェックボックス",
-    menu__item_link_3: "SVGアイコン",
-    menu__item_link_4: "GitHub",
-    text_settings_1: "設定",
-    text_settings_2: "ダークテーマ",
-    text_settings_3: "言語を変更する",
-    title_primary: "マイクロコンピュータシステムとネットワークの技術者",
-    pi_subtitle_1: "個人情報",
-    pi_subtitle_2: "連絡する",
-    pi_p__b_1: "お名前: ",
-    pi_p__i_1: "ハビエル",
-    pi_p__b_2: "ラストネーム: ",
-    pi_p__i_2: "デルガドロドリゲス",
-    pi_p__b_3: "年齢: ",
-    pi_p__i_3: "22歳",
-    pi_p__b_4: "国籍: ",
-    pi_p__i_4: "スペイン語",
-
-    pi_subtitle_2: "連絡先",
-    pi_p__b_5: "住所: ",
-    pi_p__i_5: "レガネス（マドリード",
-    pi_p__b_6: "電話番号: ",
-    pi_p__i_6: "(+34) 646 65 81 65",
-    pi_p__b_7: "Eメール: ",
-    pi_p__i_7: "javidel96@hotmail.es"
   }
 };
 
 $(function() {
   $(".translate").click(function() {
     var lang = $(this).attr("id");
-
     $("p, a, h1, h2, b, i").each(function(index, element) {
       $(this).text(arrLang[lang][$(this).attr("key")]);
     });
