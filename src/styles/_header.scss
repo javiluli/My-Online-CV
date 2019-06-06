@@ -152,34 +152,37 @@
   display: block;
   cursor: pointer;
 
-  & + span {
-    position: absolute;
-    display: block;
-    background-color: #02a6f2;
-    top: 3em;
-    right: 0;
-    width: 22em;
-    text-align: left;
-    color: white;
-    font-size: var(--smaller-font-size);
-    padding: 0.5em;
-    border-radius: var(--border-radius);
-    visibility: hidden;
-    opacity: 0;
-    transform: translateY(0.5em);
-    transition: 0.25s;
-    b {
-      font-size: var(--small-font-size);
-    }
-  }
-
-  &:active + span {
-    visibility: visible;
-    opacity: 1;
-    transform: translateY(0);
+  // &:active + span {
+  //   visibility: visible;
+  //   opacity: 1;
+  //   transform: translateY(0);
+  // }
+}
+.info_span {
+  position: absolute;
+  display: block;
+  background-color: #02a6f2;
+  top: 3em;
+  right: 0;
+  width: 22em;
+  text-align: left;
+  color: white;
+  font-size: var(--smaller-font-size);
+  padding: 0.5em;
+  border-radius: var(--border-radius);
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(0.5em);
+  transition: 0.25s;
+  b {
+    font-size: var(--small-font-size);
   }
 }
-
+.show_info_span {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+}
 // Label inputs for change 'Dark-Mode'
 .main-end {
   position: relative;

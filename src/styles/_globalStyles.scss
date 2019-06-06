@@ -64,8 +64,4 @@
 .text-styles {
   font-size: var(--normal-font-size);
   padding: 0.25em 0;
-
-  &::first-letter {
-    color: var(--color-first);
-  }
 }
