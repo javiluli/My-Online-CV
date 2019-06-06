@@ -3,6 +3,7 @@ let list_settings = document.getElementById("list_settings");
 
 settings_icon.addEventListener("click", () => {
   list_settings.classList.toggle("show_list-settings");
+  info_span.classList.remove("show_info_span");
 });
 //-----------------------------------------------------------
 let info_icon = document.getElementById("info_icon");

@@ -197,7 +197,7 @@
     position: relative;
     width: 2.5em;
     height: 1.25em;
-    background-color: hsl(0, 0%, 80%);
+    background-color: #83d8ff;
     border-radius: 1.25em;
     border: none;
     transition: var(--transition-05);
@@ -211,18 +211,20 @@
       border-radius: 100%;
       top: 0;
       left: 0;
-      background-color: #ffffff;
+      background-color: #ffcf96;
       transition: var(--transition-05);
-      transform: scale(0.9);
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      transform: scale(0.8);
+      box-shadow: 3px 2px 0px rgba(0, 0, 0, 0.2);
       transition: 0.2s;
     }
   }
   &:checked[type="checkbox"] {
-    background-color: #02a6f2;
+    background-color: #749dd6;
 
     &::before {
       left: 1.25em;
+      background-color: #ffe5b5;
+      box-shadow: -3px 2px 0px rgba(0, 0, 0, 0.2);
     }
   }
 }
