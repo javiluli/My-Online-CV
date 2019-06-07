@@ -25,17 +25,17 @@
   }
   .img-cv {
     width: 6em;
-    transform: scale(1);
+  }
+  .info_span {
+    width: 22em;
   }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   .main-menu {
-    width: 50%;
     border: 1px solid var(--color-text);
     transform: translateX(100%);
-    padding: 1em 0.5em;
     overflow-y: auto;
   }
   .show_menu {
@@ -66,7 +66,6 @@
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   .main-header__menu {
-    position: relative;
     display: grid;
     grid-template-columns: max-content 1fr;
     align-items: center;
@@ -74,8 +73,6 @@
     margin: 0 auto;
     padding: 0 0.5em;
     max-width: 1200px;
-    width: 100%;
-    height: 100%;
   }
   .main-menu {
     position: relative;
@@ -94,12 +91,12 @@
     grid-template-columns: repeat(2, auto);
     justify-content: space-between;
     align-items: center;
-    width: 100%;
-    height: 100%;
     padding: 0;
   }
   .main_menu__item-link {
     padding: 0 0.5em;
+    color: var(--color-text);
+    border-bottom: none;
 
     &:hover {
       color: var(--color-second);
@@ -145,37 +142,30 @@
     background-color: var(--color-second-body-bg);
     border-radius: var(--border-radius);
   }
-  .show_list-settings {
-    padding: 1em;
+
+  .settings-icon {
+    position: relative;
+    display: block;
+    width: 1.5em;
+    height: 1.5em;
+    &:active {
+      transform: scale(0.99);
+    }
+  }
+  .list-settings {
+    display: none;
+    padding: 0.5em 1em;
     border: 2px solid rgb(124, 124, 124);
     border-radius: var(--border-radius);
   }
-  .settings-icon {
-    position: relative;
-  }
-  // .list-settings {
-  //   display: flex;
-  //   justify-content: center;
-  //   align-items: center;
-  //   position: relative;
-  //   width: 100%;
-  // }
-  .text-settings {
+  .show_list-settings {
     display: block;
   }
-  // .change-languaje {
-  //   flex-direction: column;
-  //   position: absolute;
-  //   top: 0;
-  //   right: 3em;
-  // }
-  .img-languaje_information {
-    &:hover + span {
-      visibility: visible;
-      opacity: 1;
-      transform: translateY(0);
-    }
+  .text-settings {
+    display: block;
+    color: var(--color-text);
   }
+
   // Toggle class animation show menu
 
   .wrapper-img-cv {
@@ -236,19 +226,6 @@
 
     &::first-letter {
       color: var(--color-text);
-    }
-  }
-
-  .section-primary-container {
-    li:before {
-      content: "";
-      display: inline-block;
-      width: 0.75em;
-      height: 0.75em;
-      background-color: rgb(255, 255, 255);
-      border: 0.2em solid var(--color-first);
-      border-radius: 100%;
-      margin: 0 0.5em;
     }
   }
 }

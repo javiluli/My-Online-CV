@@ -20,10 +20,13 @@ settings_icon.addEventListener("click", () => {
 });
 //-----------------------------------------------------------
 
-// Script from menssage information in settings
+// Script from menssage information in tooltip
 let info_icon = document.getElementById("info_icon");
 let info_span = document.getElementById("info_span");
 
 info_icon.addEventListener("click", () => {
   info_span.classList.toggle("show_info_span");
+  setTimeout(function() {
+    info_span.classList.remove("show_info_span");
+  }, 5000);
 });

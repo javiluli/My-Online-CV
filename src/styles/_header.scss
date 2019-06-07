@@ -1,12 +1,13 @@
 // Main header styles
 .main-header {
-  height: var(--header-height);
-  border-bottom: 1px solid var(--border-color);
-  background: var(--color-body-bg);
   position: fixed;
   top: 0;
-  width: 100%;
   left: 0;
+  height: var(--header-height);
+  width: 100%;
+  background: var(--color-body-bg);
+  border-bottom: 1px solid var(--border-color);
+  padding: 0 1em;
   z-index: var(--z-modal);
 }
 
@@ -33,11 +34,10 @@
 .main-menu {
   position: fixed;
   text-align: right;
-  padding: 0 0.5em;
-  width: 100%;
+  padding: 1em 0.5em;
+  width: 80%;
   height: calc(100vh - 3em);
-  // background-color: rgb(18, 22, 32);
-  background-color: rgb(218, 224, 238);
+  background-color: var(--color-menu-bg);
   top: var(--header-height);
   right: 0;
   transform: translateX(100%);
@@ -59,7 +59,7 @@
   padding: 0 0.5em;
 }
 .colum-list {
-  border-bottom: 1px solid var(--color-text);
+  border-bottom: 2px solid var(--color-text);
   &:last-child {
     border-bottom: none;
   }
@@ -68,7 +68,8 @@
 //   // padding: 0.5em 0;
 // }
 .main_menu__item-link {
-  color: var(--color-text);
+  border-bottom: 1px solid var(--color-text);
+  color: hsl(180, 3%, 98%);
   padding: 0.5em 0;
 
   &:active {
@@ -77,7 +78,7 @@
 }
 // Wrapper settings
 .wrapper-settings {
-  display: flex;
+  display: none;
   justify-content: flex-end;
   align-items: center;
   width: 100%;
@@ -89,24 +90,21 @@
     display: none;
   }
 }
-
+.item-settings {
+  border-bottom: 1px solid var(--color-text);
+  padding: 0.5em 0;
+}
 .settings-icon {
-  width: 1.25em;
-  height: 1.25em;
-  &:active {
-    transform: scale(0.9);
-  }
+  display: none;
 }
 .list-settings {
-  display: none;
+  display: block;
   width: 100%;
 }
-.show_list-settings {
-  display: block;
-}
+
 .text-settings {
-  color: var(--color-text);
-  padding: 0.5em 0;
+  color: hsl(180, 3%, 98%);
+  padding: 0.25em 0;
 }
 // Items list change languaje
 .change-languaje {
@@ -129,7 +127,7 @@
   transform: scale(1);
 
   &:checked + .img-languaje {
-    transform: scale(1.1);
+    transform: scale(1.2);
     border-bottom: 2px solid rgb(68, 155, 255);
   }
 }
@@ -137,7 +135,7 @@
 .img-languaje {
   display: block;
   border-bottom: 2px solid rgba(68, 155, 255, 0.2);
-  width: 2em;
+  width: 1.5em;
   cursor: pointer;
 }
 .tooltip_information {
@@ -148,15 +146,9 @@
   align-items: center;
 }
 .img-languaje_information {
-  width: 1em;
+  width: 1.25em;
   display: block;
   cursor: pointer;
-
-  // &:active + span {
-  //   visibility: visible;
-  //   opacity: 1;
-  //   transform: translateY(0);
-  // }
 }
 .info_span {
   position: absolute;
@@ -164,7 +156,7 @@
   background-color: #02a6f2;
   top: 3em;
   right: 0;
-  width: 22em;
+  width: 15em;
   text-align: left;
   color: white;
   font-size: var(--smaller-font-size);
@@ -179,10 +171,32 @@
   }
 }
 .show_info_span {
-  visibility: visible;
-  opacity: 1;
-  transform: translateY(0);
+  animation: show_info_span 5s ease forwards;
+
+  @keyframes show_info_span {
+    0% {
+      visibility: hidden;
+      opacity: 0;
+      transform: translateY(0.5em);
+    }
+    10% {
+      visibility: visible;
+      opacity: 1;
+      transform: translateY(0);
+    }
+    90% {
+      visibility: visible;
+      opacity: 1;
+      transform: translateY(0);
+    }
+    100% {
+      visibility: hidden;
+      opacity: 0;
+      transform: translateY(0.5em);
+    }
+  }
 }
+
 // Label inputs for change 'Dark-Mode'
 .main-end {
   position: relative;
