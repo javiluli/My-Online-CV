@@ -3,8 +3,6 @@ Mi CV online creado con Webpack y Git.
 
 Pueder ver mi CV pinchando [aqui](https://javiluli.github.io/my-online-cv/)
 
-Tambien pueder ver el repositorio derde la pagina de GitHub [aqui](https://github.com/javiluli/my-online-cv)
-
 ## Este CV creado como sitio web contiene:
 - Template engine for HTML: Pug
 - CSS compiler: SCSS

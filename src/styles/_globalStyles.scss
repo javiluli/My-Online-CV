@@ -18,7 +18,7 @@
   margin: 1em 0;
   background-color: var(--color-body-bg);
   border-radius: var(--border-radius);
-  box-shadow: 0.1em 0.1em 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0.1em 0.1em 20px rgba(0, 0, 0, 0.2);
 }
 
 .section-primary-wrapper {
@@ -55,7 +55,7 @@
 
 .subtitle {
   position: relative;
-  margin: 0 0 0.5em 0.5em;
+  margin-bottom: 0.5em;
   &::after {
     content: "";
     display: block;
@@ -73,5 +73,5 @@
 }
 .text-styles {
   font-size: var(--normal-font-size);
-  padding: 0.25em 0;
+  padding: 0.25em 0.5em;
 }
