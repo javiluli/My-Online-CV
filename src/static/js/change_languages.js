@@ -1,8 +1,8 @@
 var arrLang = {
   es: {
-    menu__item_link_1: "Botones animados",
-    menu__item_link_2: "Ckeckbox animados",
     menu__item_link_3: "Iconos SVG",
+    menu__item_link_1: "Botones",
+    menu__item_link_2: "Ckeckbox's",
     menu__item_link_4: "Galeria de fotos",
     menu__item_link_5: "GitHub",
     text_settings_1: "Ajustes",
@@ -29,9 +29,9 @@ var arrLang = {
     pi_p__i_7: "javidel96@hotmail.es"
   },
   en: {
-    menu__item_link_1: "Animated buttons",
-    menu__item_link_2: "Animated Ckeckbox",
     menu__item_link_3: "SVG icons",
+    menu__item_link_1: "Buttons",
+    menu__item_link_2: "Ckeckbox's",
     menu__item_link_4: "Gallery photos",
     menu__item_link_5: "GitHub",
     text_settings_1: "Settings",
@@ -58,9 +58,9 @@ var arrLang = {
     pi_p__i_7: "javidel96@hotmail.es"
   },
   fr: {
-    menu__item_link_1: "Boutons animés",
-    menu__item_link_2: "Ckeckbox animé",
     menu__item_link_3: "icônes SVG",
+    menu__item_link_1: "Boutons",
+    menu__item_link_2: "Ckeckbox's",
     menu__item_link_4: "Galerie de photos",
     menu__item_link_5: "GitHub",
     text_settings_1: "Paramètres",

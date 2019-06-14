@@ -52,6 +52,19 @@ module.exports = {
           }
         ]
       },
+      // {
+      //   // Loader for PDF
+      //   test: /\.pdf?$/,
+      //   use: [
+      //     {
+      //       loader: "file-loader",
+      //       options: {
+      //         name: "[name].[ext]",
+      //         outputPath: "static/archive"
+      //       }
+      //     }
+      //   ]
+      // },
       {
         // Loader for files SVG
         test: /\.svg/,

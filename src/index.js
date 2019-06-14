@@ -3,7 +3,7 @@ const cache = {};
 function importAll(r) {
   r.keys().forEach(key => (cache[key] = r(key)));
 }
-importAll(require.context("./static/content/img/", true, /\.(jpg|svg)$/));
+importAll(require.context("./static/img/", true, /\.(jpg|svg)$/));
 // At build-time cache will be populated with all required modules.
 
 //---------------------------------//
@@ -15,6 +15,9 @@ import "./static/css/font-Confortaa.css";
 import "./static/css/font-Montserrat.css";
 import "./static/css/normalize.css";
 //---------------------------------//
+
+// Import CV.pdf
+// import "./static/archive/cv.pdf";
 
 //---------------------------------//
 // Import fonts.ttf
