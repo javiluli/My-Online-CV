@@ -3,6 +3,7 @@
   "description": "Mi CV online creado con Webpack y Git",
   "version": "1.0.0",
   "main": "index.js",
+  "private": true,
   "scripts": {
     "build": "rimraf dist && webpack --config webpack/webpack.config.js -p",
     "start": "webpack-dev-server --config webpack/webpack.config.js -d ",
@@ -36,11 +37,5 @@
   "bugs": {
     "url": "https://github.com/javiluli/my-online-cv/issues"
   },
-  "homepage": "https://github.com/javiluli/my-online-cv#index.html",
-  "private": true,
-  "browserslist": [
-    "last 1 version",
-    "> 1%",
-    "IE 10"
-  ]
+  "homepage": "https://github.com/javiluli/my-online-cv#index.html"
 }
