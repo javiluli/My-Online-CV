@@ -1,0 +1,45 @@
+// List menu container
+//----------------------------
+.main-menu {
+  position: fixed;
+  text-align: right;
+  padding: 1em 0.5em;
+  width: 100%;
+  height: calc(100vh - 3em);
+  background-color: var(--color-menu-bg);
+  top: var(--header-height);
+  right: 0;
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in;
+  overflow-y: auto;
+}
+// Toggle class animation show menu
+.show_menu {
+  transform: translateX(0);
+}
+//----------------------------
+
+// Items list menu
+.list-main-menu {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  padding: 0 0.5em;
+}
+.colum-list {
+  border-bottom: 2px solid var(--color-text);
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.main_menu__item-link {
+  border-bottom: 1px solid var(--color-text);
+  color: hsl(180, 3%, 98%);
+  padding: 1em 0;
+
+  &:active {
+    color: var(--color-first);
+  }
+}

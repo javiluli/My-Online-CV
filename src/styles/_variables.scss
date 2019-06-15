@@ -49,3 +49,15 @@
   --border-color: hsl(0, 0%, 27%);
   --color-menu-bg: rgb(20, 21, 26);
 }
+
+@media only screen and (min-width: 992px) {
+  :root {
+    --h1-font-size: 2rem;
+    --h2-font-size: 1.75rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: 0.875rem;
+    --smaller-font-size: 0.8125rem;
+    --header-height: 4rem;
+  }
+}

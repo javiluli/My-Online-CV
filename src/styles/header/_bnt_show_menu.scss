@@ -1,0 +1,121 @@
+// Button toggle show menu
+.main-menu-toggle {
+  position: relative;
+  display: flex;
+  align-items: center;
+  z-index: 300;
+  width: 40px;
+  height: 30px;
+  cursor: pointer;
+}
+.span-menu-toggle {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 5px;
+  border-radius: 5px;
+  background-color: var(--text-color);
+
+  &::before,
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 5px;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color: var(--text-color);
+  }
+
+  &::before {
+    animation: animation_menu_before 0.2s linear forwards;
+
+    @keyframes animation_menu_before {
+      0% {
+        top: 0px;
+        transform: rotate(45deg);
+        background-color: var(--text-color);
+      }
+      10% {
+        top: 0px;
+        transform: rotate(0deg);
+      }
+      50% {
+        top: 0px;
+        transform: rotate(0deg);
+      }
+      100% {
+        top: 10px;
+      }
+    }
+  }
+  &::after {
+    animation: animation_menu_after 0.2s linear forwards;
+
+    @keyframes animation_menu_after {
+      0% {
+        bottom: 0px;
+        transform: rotate(-45deg);
+      }
+      10% {
+        bottom: 0px;
+        transform: rotate(0deg);
+      }
+      50% {
+        bottom: 0px;
+        transform: rotate(0deg);
+      }
+      100% {
+        bottom: 10px;
+      }
+    }
+  }
+}
+
+// Animation from togle show menu
+.span-menu-toggle-show {
+  background-color: transparent;
+  &::before,
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color: var(--text-color);
+  }
+  &::before {
+    animation: animation_menuToggle_before 0.2s linear forwards;
+    @keyframes animation_menuToggle_before {
+      0% {
+        top: 10px;
+      }
+      50% {
+        top: 0px;
+        transform: rotate(0deg);
+      }
+      100% {
+        top: 0px;
+        transform: rotate(45deg);
+      }
+    }
+  }
+  &::after {
+    animation: animation_menuToggle_after 0.2s linear forwards;
+    @keyframes animation_menuToggle_after {
+      0% {
+        bottom: 10px;
+      }
+      50% {
+        bottom: 0px;
+        transform: rotate(0deg);
+      }
+      100% {
+        bottom: 0px;
+        transform: rotate(-45deg);
+      }
+    }
+  }
+}

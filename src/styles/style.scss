@@ -1,9 +1,31 @@
+// Variables CSS
 @import "./variables";
+
+// Typography and global styles
 @import "./typography";
 @import "./globalStyles";
-@import "./header";
+
+// Header
+@import "./header/main_head";
+@import "./header/main_ul_menu";
+@import "./header/wrap_setting";
+@import "./header/ul_change_language";
+@import "./header/btn_dark_mode";
+@import "./header/bnt_show_menu";
+
+// Sections of the page
 @import "./personalDates";
 @import "./skills";
+
+//Button 'Back to top' JS
 @import "./btn-back-top";
+
+// Fotter
 @import "./footer";
-@import "./mediaQuery";
+
+// Media Queries
+@import "./media/mq_max600";
+@import "./media/mq_min600";
+@import "./media//mq_768";
+@import "./media/mq_992";
+@import "./media/mq_1200";

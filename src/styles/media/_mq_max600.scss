@@ -1,0 +1,14 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .main-menu {
+    overflow-y: auto;
+  }
+  .title-primary {
+    font-size: var(--h3-font-size);
+    text-align: left;
+    padding: 0 0.25em 0;
+  }
+  .img-cv {
+    width: 5.5em;
+  }
+}

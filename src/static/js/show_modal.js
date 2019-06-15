@@ -10,16 +10,6 @@ main_menu_toggle.addEventListener("click", () => {
 });
 //-----------------------------------------------------------
 
-// Script from view setting menu
-let settings_icon = document.getElementById("settings_icon");
-let list_settings = document.getElementById("list_settings");
-
-settings_icon.addEventListener("click", () => {
-  list_settings.classList.toggle("show_list-settings");
-  info_span.classList.remove("show_info_span");
-});
-//-----------------------------------------------------------
-
 // Script from menssage information in tooltip
 let info_icon = document.getElementById("info_icon");
 let info_span = document.getElementById("info_span");
