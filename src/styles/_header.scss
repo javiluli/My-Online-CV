@@ -64,13 +64,11 @@
     border-bottom: none;
   }
 }
-// .main_menu__item {
-//   // padding: 0.5em 0;
-// }
+
 .main_menu__item-link {
   border-bottom: 1px solid var(--color-text);
   color: hsl(180, 3%, 98%);
-  padding: 0.5em 0;
+  padding: 1em 0;
 
   &:active {
     color: var(--color-first);
