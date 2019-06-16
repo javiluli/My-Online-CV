@@ -10,9 +10,10 @@
 | ❌      | ⭐⭐        | Crear formulario de contacto (preferible PHP).                                                                       |
 | ❌      | ⭐⭐⭐⭐      | Rehacer menu completo con el fin de mejorar estructura, clases, responsiveQueries y animaciones(&::hover).           |
 | ❌      | ⭐⭐⭐⭐      | Dividir el SCSS en varios archivos de elementos hijos del menu princiapl                                             |
-| ❌      | ⭐⭐⭐⭐⭐     | Adicionar en el menu un Sub-menu para las diferentes partes del CV (Exp.labora, estudios, otras comp., habilidades ) |
+| 🛠     | ⭐⭐⭐⭐⭐     | Adicionar en el menu un Sub-menu para las diferentes partes del CV (Exp.labora, estudios, otras comp., habilidades ) |
 | 🛠     | ⭐⭐⭐⭐⭐     | Revisar todos los textos del CV y mejorar ortografia y lectura del documento.                                        |
-| 🛠     | ⭐⭐⭐⭐⭐     | Modificar el boton todo hacia arriba y agregar icono SVG                                                             |
+| ✅      | ⭐⭐⭐⭐⭐     | Modificar el boton todo hacia arriba y agregar icono SVG                                                             |
+
 
 
 ## Opciones de futuro por incluir en el CV
