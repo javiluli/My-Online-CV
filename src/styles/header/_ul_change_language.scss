@@ -8,14 +8,15 @@
 }
 .labels_menu_translate {
   position: relative;
-  padding: 0.25em;
+  padding: 0.25em 0;
   display: flex;
 }
 .label__translate {
   padding: 0 0.5em;
+  outline: none;
 }
 
-.btn {
+.btn-translate {
   height: 20px;
   width: 100%;
   background: none;
@@ -47,7 +48,7 @@
   align-items: center;
 }
 .img-languaje_information {
-  width: 0.75em;
+  width: 1em;
   display: block;
   cursor: pointer;
 }
@@ -55,7 +56,7 @@
   position: absolute;
   display: block;
   background-color: #02a6f2;
-  top: 3em;
+  bottom: 3em;
   right: 0;
   width: 22em;
   text-align: left;

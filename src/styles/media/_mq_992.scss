@@ -125,6 +125,7 @@
     position: absolute;
     top: 2.5em;
     left: -0.35em;
+    padding: 0.25em;
     background-color: var(--color-body-bg);
     border: 2px solid var(--border-color);
     border-radius: var(--border-radius);
@@ -155,7 +156,8 @@
   }
 
   .info_span {
-    top: 1.75em;
+    right: 2.5em;
+    bottom: 0em;
   }
   .main-end_label {
     display: flex;

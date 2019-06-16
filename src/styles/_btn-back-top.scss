@@ -11,32 +11,51 @@
   -webkit-appearance: none;
   appearance: none;
   display: none;
-  width: 2.2em;
-  height: 2.2em;
-  padding: 0.3em;
+  width: 3em;
+  height: 3em;
   background-color: var(--color-body-bg);
   cursor: pointer;
-  border-width: 2.8px;
-  border-color: var(--color-first);
-  border-style: solid;
+  border: none;
   border-radius: 50%;
   outline: none;
-  transition-timing-function: ease-in-out;
-  transition-property: background-color, color;
   z-index: var(--z-fixed);
+  box-shadow: 0 0 0 1px hsl(0, 0%, 85%);
 
   &:active {
-    transform: scale(0.9);
-    & .cont-arrow {
-      transform: scaleX(0.9) scaleY(1.1);
-    }
+    transform: scale(0.95);
   }
 }
 .cont-arrow {
   position: relative;
-  // transition: 0.1s;
   width: 100%;
   height: 100%;
+  .arrow_min {
+    transform-origin: center;
+    animation: rotar 10s linear infinite;
+
+    @keyframes rotar {
+      from {
+        transform: rotate(0);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+  }
+
+  .arrow_max {
+    transform-origin: center;
+    animation: rotar_2 10s linear infinite;
+
+    @keyframes rotar_2 {
+      from {
+        transform: rotate(0);
+      }
+      to {
+        transform: rotate(-360deg);
+      }
+    }
+  }
 }
 
 .btnEntrance {

@@ -89,7 +89,7 @@ var arrLang = {
 };
 
 $(function() {
-  $(".translate").click(function() {
+  $(".btn-translate").click(function() {
     var lang = $(this).attr("id");
     $("p, a, h1, h2, b, i").each(function(index, element) {
       $(this).text(arrLang[lang][$(this).attr("key")]);
