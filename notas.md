@@ -1,18 +1,18 @@
 # Lista de cosas que hacer
-| Estado | Prioridad | Tarea                                                                                                                |
-| ------ | --------- | -------------------------------------------------------------------------------------------------------------------- |
-| ❌      | ⭐⭐⭐       | Crear base de datos con FireBase y boton de descarga en PDF del CV (formulario de registro e inicio de sesion).      |
-| 🛠     | ⭐⭐⭐       | Crear codigo QR para la descarga en el registro con Firebase                                                         |
-| ✅      | ⭐⭐⭐⭐      | Crear las mediaQuerys. (hecho)                                                                                       |
-| ❌      | ⭐⭐⭐       | Crear script para cambio de idioma. (iniciado, menu y Informacion personal)                                          |
-| 🛠     | ⭐⭐⭐⭐      | Mejorar las variables css e incluir mas colores. (Mejorado un poco junto al darkMode. debe continuarse)              |
-| ❌      | ⭐⭐⭐⭐      | Cambiar el README por un porfolio o por el mismo index.html del CV.                                                  |
-| ❌      | ⭐⭐        | Crear formulario de contacto (preferible PHP).                                                                       |
-| 🛠     | ⭐⭐⭐⭐      | Rehacer menu completo con el fin de mejorar estructura, clases, responsiveQueries y animaciones(&::hover).           |
-| ✅      | ⭐⭐⭐⭐      | Dividir el SCSS en varios archivos de elementos hijos del menu princiapl                                             |
-| 🛠     | ⭐⭐⭐⭐⭐     | Adicionar en el menu un Sub-menu para las diferentes partes del CV (Exp.labora, estudios, otras comp., habilidades ) |
-| 🛠     | ⭐⭐⭐⭐⭐     | Revisar todos los textos del CV y mejorar ortografia y lectura del documento.                                        |
-| ✅      | ⭐⭐⭐⭐⭐     | Modificar el boton todo hacia arriba y agregar icono SVG                                                             |
+| Estado | Prioridad     | Git branch    | Tarea                                                                                                                 |
+| ------ | ------------- | ------------- | --------------------------------------------------------------------------------------------------------------------- |
+| ❌      | (Descartado ) |               | Crear base de datos con FireBase y boton de descarga en PDF del CV (formulario de registro e inicio de sesion).       |
+| 🛠     | ⭐⭐⭐           | git c qrd     | Crear codigo QR para la descarga en el registro con Firebase                                                          |
+| ✅      |               |               | Crear las mediaQuerys. (hecho)                                                                                        |
+| 🛠     | ⭐⭐⭐⭐          |               | Crear script para cambio de idioma. (iniciado, menu y Informacion personal)                                           |
+| 🛠     | ⭐⭐⭐⭐          |               | Mejorar las variables css e incluir mas colores. (Mejorado un poco junto al darkMode. debe continuarse)               |
+| ❌      | ⭐⭐⭐⭐          |               | Cambiar el README por un porfolio o por el mismo index.html del CV.                                                   |
+| ❌      | ⭐⭐            |               | Crear formulario de contacto (preferible PHP).                                                                        |
+| 🛠     | ⭐⭐⭐⭐          |               | Rehacer menu completo con el fin de mejorar estructura, clases, responsiveQueries y animaciones(&::hover).            |
+| ✅      |               |               | Dividir el SCSS en varios archivos de elementos hijos del menu princiapl                                              |
+| 🛠     | ⭐⭐⭐⭐⭐         | git c submenu | Adicionar en el menu un Sub-menu para las diferentes partes del CV (Exp.labora, estudios, otras compe., habilidades ) |
+| 🛠     | ⭐⭐⭐⭐⭐         |               | Revisar todos los textos del CV y mejorar ortografia y lectura del documento.                                         |
+| ✅      |               |               | Modificar el boton 'todo hacia arriba' y agregar icono SVG                                                            |
 
 
 
