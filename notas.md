@@ -8,8 +8,8 @@
 | 🛠     | ⭐⭐⭐⭐      | Mejorar las variables css e incluir mas colores. (Mejorado un poco junto al darkMode. debe continuarse)              |
 | ❌      | ⭐⭐⭐⭐      | Cambiar el README por un porfolio o por el mismo index.html del CV.                                                  |
 | ❌      | ⭐⭐        | Crear formulario de contacto (preferible PHP).                                                                       |
-| ❌      | ⭐⭐⭐⭐      | Rehacer menu completo con el fin de mejorar estructura, clases, responsiveQueries y animaciones(&::hover).           |
-| ❌      | ⭐⭐⭐⭐      | Dividir el SCSS en varios archivos de elementos hijos del menu princiapl                                             |
+| 🛠     | ⭐⭐⭐⭐      | Rehacer menu completo con el fin de mejorar estructura, clases, responsiveQueries y animaciones(&::hover).           |
+| ✅      | ⭐⭐⭐⭐      | Dividir el SCSS en varios archivos de elementos hijos del menu princiapl                                             |
 | 🛠     | ⭐⭐⭐⭐⭐     | Adicionar en el menu un Sub-menu para las diferentes partes del CV (Exp.labora, estudios, otras comp., habilidades ) |
 | 🛠     | ⭐⭐⭐⭐⭐     | Revisar todos los textos del CV y mejorar ortografia y lectura del documento.                                        |
 | ✅      | ⭐⭐⭐⭐⭐     | Modificar el boton todo hacia arriba y agregar icono SVG                                                             |

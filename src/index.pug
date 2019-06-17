@@ -32,7 +32,7 @@ html(lang='en')
         <!------- Habilidades Personales (HP) / Skills (SKll)------->
         include partials/skll
 
-        <!------- Habilidades Personales (HP) / Skills (SKll)------->
+        <!-- Boton "todo hacia arriba" (btn_back_top) / Button "all up" (btn_back_top) -->
         include partials/btn_back_top
     
 
@@ -40,4 +40,13 @@ html(lang='en')
       include partials/footer
 
     script(src="https://code.jquery.com/jquery-3.4.1.js")
-  
+    
+    //- Progress bar JQuery
+    script.
+      $(window).scroll(function() {
+        var scroll = $(window).scrollTop(),
+          dh = $(document).height(),
+          wh = $(window).height();
+        value = (scroll / (dh - wh)) * 100;
+        $("#progress_bar").css("width", value + "%");
+      });

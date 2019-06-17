@@ -89,75 +89,89 @@
       display: none;
     }
   }
-  .item-settings {
-    border-bottom: none;
-    margin: 0 0.5em;
-    padding: 0;
-  }
-
   .list-settings {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 2.5em;
+    grid-gap: var(--grid-gap);
     padding: 0;
     border-radius: 0;
     border: none;
   }
+  .item-settings {
+    border-bottom: none;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+  }
+
   .text-settings {
     display: none;
   }
+  // Drak mode
+  .main-end_label {
+    align-items: center;
+  }
   // Items list change languaje
   .change-languaje {
-    flex-direction: column;
+    justify-content: center;
     border-bottom: 1px solid var(--color-text-light);
     position: relative;
-
-    &:hover {
-      .labels_menu_translate {
-        opacity: 1;
-        visibility: visible;
-      }
-    }
+    width: 100%;
+    height: 100%;
   }
-
+  // Margin bottom media query 992px
+  .m-bottom {
+    margin-bottom: 0em;
+  }
+  // Hover efect view change translate
   .labels_menu_translate {
     flex-direction: column;
-    position: absolute;
-    top: 2.5em;
-    left: -0.35em;
     padding: 0.25em;
     background-color: var(--color-body-bg);
-    border: 2px solid var(--border-color);
+    border: 1px solid var(--border-color);
     border-radius: var(--border-radius);
-    opacity: 0;
-    visibility: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    &:hover {
+      top: 8%;
+      transform: translate(-50%, -0);
+    }
+    &:hover .m-bottom {
+      margin-bottom: 0.5em;
+    }
+    &:hover .label__translate,
+    &:hover .tooltip_information {
+      display: block;
+    }
   }
+  //-------------------------------------
+
   .label__translate {
     padding: 0;
-  }
-  .btn {
-    height: 20px;
-    width: 100%;
-    background: none;
-    border: none;
-    cursor: pointer;
     display: none;
-    transform: scale(1);
-
+  }
+  .btn-translate {
     &:checked + .img-languaje {
       transform: scale(1.15);
-      border-bottom: none;
+      border: none;
     }
   }
 
   .img-languaje {
     border-bottom: none;
-    margin-bottom: 0.5em;
+  }
+  .tooltip_information {
+    display: none;
   }
 
   .info_span {
     right: 2.5em;
-    bottom: 0em;
+    bottom: 0.5em;
   }
   .main-end_label {
     display: flex;

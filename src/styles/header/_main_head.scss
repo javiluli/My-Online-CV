@@ -28,3 +28,13 @@
   height: 2.5em;
   width: 2.5em;
 }
+
+// Progress bar JQuery
+#progress_bar {
+  position: fixed;
+  height: 2px;
+  top: var(--header-height);
+  left: 0;
+  background-color: var(--color-first);
+  z-index: var(--z-back);
+}
