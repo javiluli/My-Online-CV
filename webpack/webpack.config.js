@@ -5,18 +5,8 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 module.exports = {
   entry: "./src/index.js",
   output: {
-    // path: path.resolve(__dirname, "../dist"),
-    // (Crea una capeta adicional con todo el proejcto)
     path: path.resolve(__dirname, "../"),
-    filename: "js/script.js"
-  },
-  devServer: {
-    port: 9000,
-    compress: true,
-    open: true,
-    hot: true,
-    host: "192.168.1.44",
-    watchContentBase: true
+    filename: "js/script.js",
   },
 
   module: {
@@ -24,12 +14,12 @@ module.exports = {
       {
         // Compiler and loader for PUG in HTML
         test: /\.pug/,
-        loader: "pug-loader"
+        loader: "pug-loader",
       },
       {
         // Compiler SCSS/SASS in miniCss
         test: /\.(sa|sc)ss$/,
-        use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"]
+        use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
       },
       {
         // Loader for css
@@ -39,10 +29,10 @@ module.exports = {
             loader: "file-loader",
             options: {
               name: "[name].[ext]",
-              outputPath: "static/css"
-            }
-          }
-        ]
+              outputPath: "static/css",
+            },
+          },
+        ],
       },
       {
         // Loader for fonts
@@ -52,24 +42,11 @@ module.exports = {
             loader: "file-loader",
             options: {
               name: "[name].[ext]",
-              outputPath: "static/fonts"
-            }
-          }
-        ]
+              outputPath: "static/fonts",
+            },
+          },
+        ],
       },
-      // {
-      //   // Loader for PDF
-      //   test: /\.pdf?$/,
-      //   use: [
-      //     {
-      //       loader: "file-loader",
-      //       options: {
-      //         name: "[name].[ext]",
-      //         outputPath: "static/archive"
-      //       }
-      //     }
-      //   ]
-      // },
       {
         // Loader for files SVG
         test: /\.svg/,
@@ -79,10 +56,10 @@ module.exports = {
             options: {
               name: "[name].[ext]",
               outputPath: "static/content/svg",
-              useRelativePath: true
-            }
-          }
-        ]
+              useRelativePath: true,
+            },
+          },
+        ],
       },
       {
         // Loader for files Gif
@@ -93,10 +70,10 @@ module.exports = {
             options: {
               name: "[name].[ext]",
               outputPath: "static/content/gif",
-              useRelativePath: true
-            }
-          }
-        ]
+              useRelativePath: true,
+            },
+          },
+        ],
       },
       {
         // Loader for files jpg and png
@@ -107,10 +84,10 @@ module.exports = {
             options: {
               name: "[name].[ext]",
               outputPath: "static/content/img",
-              useRelativePath: true
-            }
-          }
-        ]
+              useRelativePath: true,
+            },
+          },
+        ],
       },
       {
         // Loader for images and minified images
@@ -118,26 +95,26 @@ module.exports = {
         options: {
           mozjpeg: {
             progressive: true,
-            quality: 65
+            quality: 65,
           },
           // optipng.enabled: false will disable optipng
           optipng: {
-            enabled: true
+            enabled: true,
           },
           pngquant: {
             quality: "65-90",
-            speed: 4
+            speed: 4,
           },
           gifsicle: {
-            interlaced: false
+            interlaced: false,
           },
           // the webp option will enable WEBP
           webp: {
-            quality: 75
-          }
-        }
-      }
-    ]
+            quality: 75,
+          },
+        },
+      },
+    ],
   },
 
   plugins: [
@@ -150,12 +127,12 @@ module.exports = {
         removeRedundantAttributes: true,
         removeScriptTypeAttributes: true,
         removeStyleLinkTypeAttributes: true,
-        useShortDoctype: true
-      }
+        useShortDoctype: true,
+      },
     }),
     // Minified files CSS
     new MiniCssExtractPlugin({
-      filename: "css/style.css"
-    })
-  ]
+      filename: "css/style.css",
+    }),
+  ],
 };

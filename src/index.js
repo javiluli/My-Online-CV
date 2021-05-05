@@ -1,7 +1,7 @@
 // Import all filder from ./static/content/img/
 const cache = {};
 function importAll(r) {
-  r.keys().forEach(key => (cache[key] = r(key)));
+  r.keys().forEach((key) => (cache[key] = r(key)));
 }
 importAll(require.context("./static/img/", true, /\.(jpg|svg)$/));
 // At build-time cache will be populated with all required modules.

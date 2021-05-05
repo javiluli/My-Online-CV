@@ -15,10 +15,10 @@
 }
 
 .section-primary-container {
-  margin: 1em 0;
+  margin: 3em 0;
   background-color: var(--color-body-bg);
   border-radius: var(--border-radius);
-  box-shadow: 0.1em 0.1em 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
 }
 
 .section-primary-wrapper {
@@ -26,7 +26,7 @@
   flex-direction: column;
   justify-content: center;
   border-radius: var(--border-radius);
-  padding: 0.5em;
+  padding: 1em 1.5em;
   li {
     position: relative;
     &::before {
