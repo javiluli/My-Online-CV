@@ -24,7 +24,7 @@
 
 ## Tarea para hacer en otros projectos
 
-### Rehacer projectos:
+### Rehacer projectos
 
 - Custom buttons
 - Custom checkbox
