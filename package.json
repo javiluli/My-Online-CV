@@ -33,7 +33,7 @@
   "bugs": {
     "url": "https://github.com/javiluli/my-online-cv/issues"
   },
-  "homepage": "https://github.com/javiluli/my-online-cv#index.html"
+  "homepage": "https://github.com/javiluli/my-online-cv#index.html",
   "devDependencies": {
     "pug": ">=3.0.1"
   }
