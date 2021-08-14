@@ -32,5 +32,6 @@ Pueder ver mi CV pinchando [aqui](https://javiluli.github.io/my-online-vc/)
   - `"build": "rimraf dist && webpack --config webpack/webpack.config.js -p",`
 
 - ### `npm start`
+
   - Iniciar un servidor local para desarrollo:
   - `"start": "webpack-dev-server --config webpack/webpack.config.js -d"`
